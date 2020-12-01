@@ -116,7 +116,7 @@ class Footer extends Component {
               </footer>
               <div className="sub-footer">
                 <Container>
-                  <p className="font-16 font-regular text-white text-center mb-0">© 2020 QLResources All rights reserved.</p>
+                  <p className="font-16 font-regular text-white text-center mb-0">© 2020 <Link to="/" className="text-white">QLResources</Link> All rights reserved.</p>
                 </Container>
               </div>
             </>

@@ -385,6 +385,40 @@ section.home-section-1 .slick-prev:before {
   font-size: 25px;
   opacity: 1 !important;
 }
+section.home-section-1 .slick-dots
+{
+  bottom: 25px !important;
+}
+section.home-section-1 .slick-dots li.slick-active, 
+section.home-section-1 .slick-dots li.slick-active button
+{
+    width: 25px;
+    height: 10px !important;
+}
+section.home-section-1 .slick-dots li, 
+section.home-section-1 .slick-dots li button
+{
+    width: 15px;
+    height: 10px !important;
+}
+section.home-section-1 .slick-dots li button:before
+{
+  content: "" !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 10px !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+section.home-section-1 .slick-dots li.slick-active button:before
+{
+  content: "" !important;
+  width: 25px !important;
+  height: 10px !important;
+  border-radius: 10px !important;
+  background-color: #333366 !important;
+
+}
 
 // Home section 2
 
@@ -415,6 +449,8 @@ img:focus{
 .home-section-2 .slider-data
 {
   padding: 0px 20px;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -621,7 +657,9 @@ footer .footer-data-inner ul li a:hover{
 {
   background: #333;
   background-color: #333;
+  padding: 15px 0px;
 }
+.sub-footer a:hover{color: #23A5DD !important;}
 footer .menu .nav-link
 {  
 padding: 0px 0px !important;
@@ -653,7 +691,7 @@ padding: 0px 0px !important;
   .lg-mb-4{margin-bottom: 25px;}
   .mb-50 {margin-bottom: 30px !important;}
   .font-60{font-size: 40px!important ;line-height: 55px !important;}
-  .home-section-6 { min-height: 400px !important;background-size: cover !important;}
+  section.home-section-6 .home-section-6-data{ min-height: 400px !important;background-size: cover !important;}
   .testimonial-section .slick-next {right: -20px !important}
   .testimonial-section .slick-prev {left: -20px !important}
   .testimonial-section .test-img {width: 160px !important;height: 160px !important;}
@@ -669,7 +707,7 @@ padding: 0px 0px !important;
 @media all and (max-width:992px)
 {
   header .sub-header{-webkit-box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important;box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important; }
-  header .sub-header ul li{padding: 5px 0px !important;}
+  header .sub-header ul li{padding: 0px 0px !important;}
   header .sub-header .navbar li:last-child {padding: 5px 0px 5px 0px !important;}
   header .sub-header .list-group.list-group-horizontal{
     display: block !important;
@@ -681,7 +719,7 @@ padding: 0px 0px !important;
   header .sub-header .list-group-horizontal>.list-group-item:first-child{width: 100%;border-bottom: 1px solid #f7f7f7 !important;border-radius: 0 !important;}
   .md-mb-4{margin-bottom: 25px;}
   .text-large-center{text-align:center !important;}
-  .home-section-6 {min-height: 300px !important;}
+  section.home-section-6 .home-section-6-data {min-height: 300px !important;}
   
   .home-section-1 .slick-arrow.slick-prev,
   .home-section-1 .slick-arrow.slick-next
@@ -718,7 +756,7 @@ padding: 0px 0px !important;
    .testimonial-section .testimonial-slider {background-size: contain !important;padding: 20px 0px 20px 0px !important;}
    .testimonial-section .test-img {width: 135px !important;height: 135px !important;}
    header .sub-header .navbar .navbar-brand .nav-link {padding: 0px 0px !important;}
-   header .sub-header .navbar .nav-link {padding: 0px 15px !important;width: 100%;text-align: left;text-transform: capitalize !important;}
+   header .sub-header .navbar .nav-link {padding: 10px 15px !important;width: 100%;text-align: left;text-transform: capitalize !important;}
    header .sub-header .navbar .navbar-nav{padding: 10px 0px 0px;}
    .title h2 {font-size: 30px !important;line-height: 36px !important;}
    .title p {font-size: 20px !important;line-height: 26px !important;}
@@ -733,8 +771,8 @@ padding: 0px 0px !important;
   section.contact-section-2 iframe{height: 300px !important;}
   section.contact-section-3 form .form-group {margin-bottom: 20px !important;}
   section.contact-section-3 form .form-control.main,
-  section.contact-section-3 form .input-group-text
-   {height: 50px !important;}
+  section.contact-section-3 form .input-group-text{height: 50px !important;}
+  .sub-footer{padding: 10px 0px !important;}
 }
 @media all and (max-width:768px)
 {
@@ -747,7 +785,7 @@ padding: 0px 0px !important;
   .font-24 {font-size: 20px !important;line-height: 32px !important;}
   .font-40{font-size: 30px!important;line-height: 41px!important;}
   .font-60{font-size: 40px!important ;line-height: 55px !important;}
-  .home-section-6 {min-height: 300px !important;}
+  section.home-section-6 .home-section-6-data {min-height: 300px !important;}
   .testimonial-section .testimonial-slider {background-size: contain !important; padding: 20px 0px 20px 0px !important;}
   .testimonial-section .test-img {width: 130px !important;height: 130px !important;}
   .testimonial-section .test-button {right: 10px !important; width: 35px !important;}
@@ -779,7 +817,7 @@ padding: 0px 0px !important;
   .font-25 {font-size: 22px !important;line-height: 30px !important;}
   .font-40{font-size: 24px!important;line-height: 35px!important;}
   .font-60{font-size: 30px!important ;line-height: 36px !important;}
-  .home-section-6 {min-height: 250px !important;}
+  section.home-section-6 .home-section-6-data {min-height: 250px !important;}
   .testimonial-section .test-img {width: 100px !important;height: 100px !important;}
   .title {margin-bottom: 20px !important;}
   .title h2 {font-size: 26px !important;line-height: 35px !important;}
@@ -1836,12 +1874,14 @@ section.client-section-2 .nav-item .nav-link:hover
 @media all and (max-width:991px)
 {
 .font-semibold-to-regular{font-weight: 500 !important;}
+section.home-section-1 .slick-dots{bottom: 15px !important;}
 }
 @media all and (max-width:767px)
 {
   .home-section-7 {padding: 30px 0px 10px !important;}
   section.service-section-4.about-section-3 {padding: 30px 0px 10px 0px !important;}
   .medium-justify-center{justify-content: center !important;}
+  section.home-section-1 .slick-dots{display: none !important;}
 }
 @media all and (max-width:575px)
 {
