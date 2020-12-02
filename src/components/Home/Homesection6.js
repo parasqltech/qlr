@@ -13,11 +13,7 @@ class HomeSection6 extends Component {
             <section className="home-section-6">
                   <Container>
                         <div className="home-section-6-data">
-                            <Row className="justify-content-center ">
-                                <Col xl={10} lg={10} md={12} sm={12}>
-                                    <HomeScreen6/>
-                                </Col>
-                            </Row>
+                            <HomeScreen6/>
                         </div>
                   </Container>
             </section>

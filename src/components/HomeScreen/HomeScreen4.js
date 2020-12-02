@@ -34,7 +34,7 @@ export default () => (
         data.allWordpressWpCpt90.edges.map(
         prop => {
           return (
-          <Col xl={5} lg={5} md={6} sm={12} className="md-mb-4 mb-30">
+          <Col xl={6} lg={5} md={6} sm={12} className="md-mb-4 mb-30">
                         <div className="position-relative">
                           <Image src={prop.node.acf.image.source_url} className="img-fluid"/>
                           <div className="inner-data-card bg-white">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container,Button } from 'react-bootstrap';
+import { Container,Button,Col,Row } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { FaAngleRight } from 'react-icons/fa'
 
@@ -29,8 +29,13 @@ export default () => (
         prop => {
           return (
             <>
-              <h2 className="font-60 font-bold mb-4">{prop.node.acf.title}</h2>
-              <Button className="blue font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
+            <Row className="justify-content-center">
+                <Col xl={10} lg={10} md={12} sm={12}>
+                  <h2 className="font-60 font-bold mb-4">{prop.node.acf.title}</h2>
+                  <Button className="blue font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
+                </Col>
+            </Row>
+            
             </>
             )
           }

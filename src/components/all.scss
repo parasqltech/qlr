@@ -704,6 +704,7 @@ padding: 0px 0px !important;
   section.contact-section-2 iframe{height: 350px !important;}
   section.contact-section-3 form .input-group-text img{height: 20px !important;}
 section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
+
 }
 
 @media all and (max-width:992px)
@@ -886,7 +887,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
 
 section.contact-section-2
 {
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 section.contact-section-2 .media
 {
@@ -1870,7 +1871,7 @@ section.client-section-2 .nav-item .nav-link:hover
   section.client-section-2 {padding: 30px 0px 30px 0px !important;}
   section.blog-section-2 {padding: 30px 0px !important;}
   section.blog-details-section-3 {padding: 20px 0px 30px 0px !important;}
-  section.contact-section-2 {padding: 30px 0px !important;}
+  section.contact-section-2 {padding: 30px 0px 30px 0px !important;}
   section.contact-section-3 {padding: 0px 0px 30px 0px !important;}
 }
 @media all and (max-width:991px)
@@ -1925,3 +1926,8 @@ section.service-main-section-2 ul li .arrow-data {
   width: calc(100% - 12px);
   vertical-align: top;
 }
+
+// 02-12-2020
+
+
+section.contact-section-2 iframe{margin-bottom: 40px ;}

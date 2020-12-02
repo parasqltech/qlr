@@ -44,7 +44,6 @@ export default () => (
                       <Card.Body className="p-0">
                         <Card.Title className="font-22 font-bold">{prop.node.acf.title1}</Card.Title>
                         <Card.Text className=" font-14 font-regular">{prop.node.acf.title1}</Card.Text>
-                        <Link to="/" className="nav-link p-0 font-18 font-regular">Learn more<FaAngleRight className="pl-2" /> </Link>
                       </Card.Body>
                     </Card>
                    <div class="shape-one"></div><div class="shape-two"></div><div class="shape-three"></div>

@@ -5,6 +5,7 @@ import { FaAngleRight } from 'react-icons/fa'
 import formname from '../../images/form-name.png'
 import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
+import ContactScreen3Title  from '../ContactScreen/ContactScreenTitle3'
 
 class Contactsection3 extends Component {
 
@@ -15,10 +16,7 @@ class Contactsection3 extends Component {
             
             <section className="contact-section-3">
                 <Container>
-                    <div className="title">
-                        <h2 className="text-center">Lorem ipsum dolor sit?</h2>
-                        <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-                    </div>
+                   <ContactScreen3Title/>
                     <Form>
                         <Row className="mt-4">
                             <Col xl={6} lg={6} md={12}>
