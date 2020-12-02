@@ -19,7 +19,7 @@ class Blogsection1 extends Component {
                                     <Link className="nav-link p-0" to="/">Home</Link>
                                 </Breadcrumb.Item>
                                 <Breadcrumb.Item className="font-18  font-bold ">
-                                    <Link className="nav-link p-0" to="/">Blogs</Link>
+                                    <Link className="nav-link p-0" to="/blog">Blogs</Link>
                                 </Breadcrumb.Item>
                                 <Breadcrumb.Item active href=""className="font-18 font-bold">Blog Details</Breadcrumb.Item>
                             </Breadcrumb>

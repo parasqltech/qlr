@@ -44,7 +44,7 @@ export default () => (
           return (
                 <Container>
                   <div className="title">
-                        <h2 className="text-center">{prop.node.acf.heading}?</h2>
+                        <h2 className="text-center">{prop.node.acf.heading}</h2>
                         <p className="text-center">{prop.node.acf.paragraph}</p>
                   </div>
                   

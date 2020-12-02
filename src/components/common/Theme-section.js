@@ -7,7 +7,67 @@ import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
 import thmeimage from '../../images/theme-image.png'
 import blog1 from '../../images/theme-blog-1.png'
+import SimpleReactValidator from 'simple-react-validator';
+
 class Themeform extends Component {
+
+    constructor(props) {
+        super(props);
+        this.validator = new SimpleReactValidator();
+  
+        this.state = {
+         
+          email: '',
+          mobile: '',
+          lname: '',
+          fname: '',
+          shown: "d-none",
+            IsSubmit: false,
+        
+        }
+      this.submitForm = this.submitForm.bind(this);
+      this.email = this.email.bind(this);
+      this.mobile = this.mobile.bind(this);
+      this.lname = this.lname.bind(this);
+      this.fname = this.fname.bind(this);
+      
+    }
+    
+    
+    email(e) {
+        this.setState({
+            email: e.target.value
+        });
+    }
+    mobile(e) {
+        this.setState({
+            mobile: e.target.value
+        });
+    }
+    lname(e) {
+        this.setState({
+            lname: e.target.value
+        });
+    }
+    fname(e) {
+        this.setState({
+            fname: e.target.value
+        });
+    }
+
+    submitForm() {
+      if (this.validator.allValid()) {
+        alert('success');
+        this.setState({IsSubmit: true});  
+        
+        
+      } else {
+        this.validator.showMessages();
+        this.forceUpdate();
+      }
+    }
+
+
     render() {
         
         return (
@@ -34,53 +94,54 @@ class Themeform extends Component {
                                                 <Col xl={6} lg={6} md={12}>
                                                     <Form.Group controlId="">
                                                         <InputGroup className="mb-0">
-                                                            <FormControl placeholder="First Name" className="main font-18 font-regular color-666"/>
+                                                            <input type="text" value={this.state.fname} onChange={this.fname} className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
                                                             <InputGroup.Append>
                                                             <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                                             </InputGroup.Append>
                                                         </InputGroup>
-                                                        <Form.Text className="text-muted d-none">
-                                                            Error Massage
-                                                        </Form.Text>
+                                                        <span className="errormsg">
+                                                            {this.validator.message('First Name', this.state.fname, 'required|fname')}
+                                                        </span>
                                                     </Form.Group>
                                                 </Col>
                                                 <Col xl={6} lg={6} md={12}>
                                                     <Form.Group controlId="">
                                                         <InputGroup className="mb-0">
-                                                            <FormControl placeholder="Last Name" className="main font-18 font-regular color-666"/>
-                                                            <InputGroup.Append>
-                                                            <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
-                                                            </InputGroup.Append>
-                                                        </InputGroup>
-                                                        <Form.Text className="text-muted d-none">
-                                                            Error Massage
-                                                        </Form.Text>
+                                                            <input type="text" value={this.state.lname} onChange={this.lname} className="form-control main font-18 font-regular color-666" placeholder="Last Name" /> 
+                                                        <InputGroup.Append>
+                                                        <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
+                                                        </InputGroup.Append>
+                                                    </InputGroup>
+                                                    <span className="errormsg">
+                                                        {this.validator.message('Last Name', this.state.lname, 'required|lname')}
+                                                    </span>
                                                     </Form.Group>
                                                 </Col>
                                                 <Col xl={6} lg={6} md={12}>
                                                     <Form.Group controlId="">
                                                         <InputGroup className="mb-0">
-                                                            <FormControl placeholder="Mobile Number" className="main font-18 font-regular color-666"/>
+                                                            <input type="text" value={this.state.mobile} onChange={this.mobile} className="form-control main font-18 font-regular color-666" placeholder="Mobile Number" /> 
                                                             <InputGroup.Append>
                                                             <InputGroup.Text id=""><Image src={formcall} fluid/></InputGroup.Text>
                                                             </InputGroup.Append>
                                                         </InputGroup>
-                                                        <Form.Text className="text-muted d-none">
-                                                            Error Massage
-                                                        </Form.Text>
+                                                        <span className="errormsg">
+                                                            {this.validator.message('Mobile Number', this.state.mobile, 'required|mobile')}
+                                                            {this.validator.message('Mobile Number', this.state.mobile, 'numeric|min:0,num|max:11')}
+                                                        </span>
                                                     </Form.Group>
                                                 </Col>
                                                 <Col xl={6} lg={6} md={12}>
                                                     <Form.Group controlId="">
                                                         <InputGroup className="mb-0">
-                                                            <FormControl placeholder="Email" className="main font-18 font-regular color-666"/>
+                                                            <input type="text" value={this.state.email} onChange={this.email} className="form-control main font-18 font-regular color-666" placeholder="Email" />        
                                                             <InputGroup.Append>
                                                             <InputGroup.Text id=""><Image src={formmail} fluid/></InputGroup.Text>
                                                             </InputGroup.Append>
                                                         </InputGroup>
-                                                        <Form.Text className="text-muted d-none">
-                                                            Error Massage
-                                                        </Form.Text>
+                                                        <span className="errormsg">
+                                                            {this.validator.message('Email', this.state.email, 'required|email')}
+                                                        </span>
                                                     </Form.Group>
                                                 </Col>
                                                 <Col xl={12} lg={12} md={12}>
@@ -89,8 +150,7 @@ class Themeform extends Component {
                                                     </Form.Group>
                                                 </Col>
                                                 <Col xl={12} lg={12} md={12} className="justify-content-start d-flex">
-                                                    <Button variant="" type="submit" className="blue font-semibold d-flex alignn-items-center">
-                                                        Send <FaAngleRight className="ml-1"/>
+                                                    <Button variant="" type="button" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">Send
                                                     </Button>
                                                 </Col>
                                             </Row>

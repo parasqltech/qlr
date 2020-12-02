@@ -9,6 +9,7 @@ import blog4 from '../../images/home-section-4-img-4.png'
 import blog5 from '../../images/home-section-4-img-5.png'
 import blog6 from '../../images/home-section-4-img-6.png'
 import HomeScreen4 from '../HomeScreen/HomeScreen4'
+import HomeScreen4title from '../HomeScreen/Homescreen4title'
 class HomeSection4 extends Component {
 
      
@@ -18,10 +19,7 @@ class HomeSection4 extends Component {
             <>
             <section className="home-section-4">
                   <Container>
-                    <div className="title">
-                      <h2 className="text-center">Lorem ipsum dolor sit?</h2>
-                      <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-                    </div>
+                    <HomeScreen4title/>
                     <Row className="">
                       <HomeScreen4/>
                     </Row>

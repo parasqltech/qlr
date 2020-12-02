@@ -92,8 +92,7 @@ class Footer extends Component {
                                      <Image src={footermail} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    {/* <Link to="" className="nav-link p-0"> support@qltech.com.au</Link> */}
-                                    <a href="mailto:support@qltech.com.au" className="nav-link p-0"><FooterEmail/></a>
+                                    <a href="mailto:support@qltech.com.au" className="nav-link font-16 font-regular">support@qltech.com.au</a>
                                   </div>
                               </div>
                             </ListGroup.Item>
@@ -103,8 +102,7 @@ class Footer extends Component {
                                      <Image src={footercall} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    {/* <Link to="" className="nav-link p-0"> +61 8 6262 3559</Link> */}
-                                    <a href="tel:+61862623559" className="nav-link p-0"><FooterMobile/></a>
+                                    <a href="tel:+61862623559" className="nav-link font-16 font-regular">+61 8 6262 3559</a>
                                   </div>
                               </div>
                             </ListGroup.Item>

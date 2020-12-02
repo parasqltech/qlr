@@ -35,15 +35,15 @@ export default () => (
           return (
             
             <Col xl={4} lg={4} md={12} className="mb-4 service-card">
-                <div className="service-block-two">
-                   <div class="inner-box wow fadeInLeft  animated" >
+                <div className="service-block-two h-100">
+                   <div class="inner-box wow fadeInLeft  animated h-100" >
                     <Card className="border-0">
                       <div className="icon-box">
                         <Card.Img variant="top" src={prop.node.acf.image.source_url}  fluid />
                       </div>
                       <Card.Body className="p-0">
                         <Card.Title className="font-22 font-bold">{prop.node.acf.title1}</Card.Title>
-                        <Card.Text className=" font-14 font-regular">{prop.node.acf.title1}</Card.Text>
+                        <Card.Text className=" font-14 font-regular">{prop.node.acf.title2}</Card.Text>
                       </Card.Body>
                     </Card>
                    <div class="shape-one"></div><div class="shape-two"></div><div class="shape-three"></div>
