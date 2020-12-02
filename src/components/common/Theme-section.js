@@ -23,7 +23,7 @@ class Themeform extends Component {
           fname: '',
           shown: "d-none",
             IsSubmit: false,
-        
+            success: 'd-none',
         }
       this.submitForm = this.submitForm.bind(this);
       this.email = this.email.bind(this);
@@ -58,6 +58,7 @@ class Themeform extends Component {
     submitForm() {
       if (this.validator.allValid()) {
         alert('success');
+        this.setState({success: "d-block"});
         this.setState({IsSubmit: true});  
         
         
@@ -152,6 +153,7 @@ class Themeform extends Component {
                                                 <Col xl={12} lg={12} md={12} className="justify-content-start d-flex">
                                                     <Button variant="" type="button" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">Send
                                                     </Button>
+                                                    <p className={this.state.success}>This is Customise Success message</p>
                                                 </Col>
                                             </Row>
                                         </Form>

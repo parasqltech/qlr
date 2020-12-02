@@ -5,7 +5,6 @@ import { FaAngleRight } from 'react-icons/fa'
 import formname from '../../images/form-name.png'
 import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
-import ContactScreen3Title  from '../ContactScreen/ContactScreenTitle3'
 import SimpleReactValidator from 'simple-react-validator';
 
 class Contactsection3 extends Component {
@@ -19,8 +18,10 @@ class Contactsection3 extends Component {
           mobile: '',
           lname: '',
           fname: '',
+          message: '',
           shown: "d-none",
-            IsSubmit: false,
+          IsSubmit: false,
+          success: "d-none",
         
         }
       this.submitForm = this.submitForm.bind(this);
@@ -28,7 +29,7 @@ class Contactsection3 extends Component {
       this.mobile = this.mobile.bind(this);
       this.lname = this.lname.bind(this);
       this.fname = this.fname.bind(this);
-      
+      this.message = this.message.bind(this);
     }
     
     
@@ -52,14 +53,27 @@ class Contactsection3 extends Component {
             fname: e.target.value
         });
     }
-
+    message(e) {
+        this.setState({
+            message: e.target.value
+        });
+    }
     submitForm() {
       if (this.validator.allValid()) {
         alert('success');
+        this.setState({success: "d-none"});
+        setTimeout(
+            function() {
+                this.setState({success: "d-none"});
+            }
+        .bind(this),
+            2000
+        );
         this.setState({IsSubmit: true});  
         
         
       } else {
+        this.setState({success: "d-none"});
         this.validator.showMessages();
         this.forceUpdate();
       }
@@ -71,7 +85,10 @@ class Contactsection3 extends Component {
             
             <section className="contact-section-3">
                 <Container>
-                   <ContactScreen3Title/>
+                    <div className="title">
+                        <h2 className="text-center">Lorem ipsum dolor sit?</h2>
+                        <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    </div>
                     <Form>
                         <Row className="mt-4">
                             <Col xl={6} lg={6} md={12}>
@@ -129,7 +146,10 @@ class Contactsection3 extends Component {
                             </Col>
                             <Col xl={12} lg={12} md={12}>
                                 <Form.Group controlId="">
-                                <Form.Control as="textarea" rows="5" placeholder="Message" />
+                                <Form.Control as="textarea" rows="5" placeholder="Message" value={this.state.message} onChange={this.message}/>
+                                <span className="errormsg">
+                                        {this.validator.message('Message', this.state.message, 'required|message')}
+                                    </span>
                                 </Form.Group>
                             </Col>
                             <Col xl={12} lg={12} md={12} className="justify-content-center d-flex">
@@ -138,6 +158,7 @@ class Contactsection3 extends Component {
                                 </Button>
                             </Col>
                         </Row>
+                        <p className={this.state.success}>this is cust</p>
                     </Form>
                 </Container>
             </section>
