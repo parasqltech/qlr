@@ -75,7 +75,7 @@ export default () => (
                   <div className="slider-inner-data">
                   <Container>
                     <Row>
-                    <Col xl={8} lg={12} md={12}>
+                    <Col xl={9} lg={12} md={12}>
                       <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
                       <h3 className="font-bold color-abf">{prop.node.acf.title3}</h3>
                       <Button className="white font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
