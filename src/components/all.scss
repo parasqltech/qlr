@@ -510,7 +510,7 @@ section.home-section-6 .home-section-6-data
 {
   padding: 50px 0px;
   background: url(../images/home-section-6-bg.png);
-  min-height: 518px;
+  min-height: 440px;
   background-size: 100% 100% !important;
   -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
@@ -691,9 +691,9 @@ padding: 0px 0px !important;
   .lg-mb-4{margin-bottom: 25px;}
   .mb-50 {margin-bottom: 30px !important;}
   .font-60{font-size: 40px!important ;line-height: 55px !important;}
-  section.home-section-6 .home-section-6-data{ min-height: 400px !important;background-size: cover !important;}
-  .testimonial-section .slick-next {right: -20px !important}
-  .testimonial-section .slick-prev {left: -20px !important}
+  section.home-section-6 .home-section-6-data{ min-height: 350px !important;background-size: cover !important;}
+  .testimonial-section .slick-next {right: 0px !important}
+  .testimonial-section .slick-prev {left: 0px !important}
   .testimonial-section .test-img {width: 160px !important;height: 160px !important;}
   .title h2 {font-size: 40px !important;line-height: 46px !important;}
   .title p {font-size: 22px !important;line-height: 28px !important;}
@@ -703,7 +703,9 @@ padding: 0px 0px !important;
   section.home-section-1 .slider-inner-data {top: 60px !important;padding: 0px 0px !important;}
   section.contact-section-2 iframe{height: 350px !important;}
   section.contact-section-3 form .input-group-text img{height: 20px !important;}
+section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
 }
+
 @media all and (max-width:992px)
 {
   header .sub-header{-webkit-box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important;box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important; }
@@ -715,7 +717,7 @@ padding: 0px 0px !important;
     margin-top: 10px;
     width: 100% !important;
   }
-  header .sub-header .list-group.list-group-horizontal li{width: 100%;border-bottom: 1px solid #f7f7f7 !important;border-radius: 0 !important}
+  header .sub-header .list-group.list-group-horizontal li{width: 100%;border-bottom: 1px solid #f7f7f7 !important;border-radius: 0 !important;font-size: 16px !important;}
   header .sub-header .list-group-horizontal>.list-group-item:first-child{width: 100%;border-bottom: 1px solid #f7f7f7 !important;border-radius: 0 !important;}
   .md-mb-4{margin-bottom: 25px;}
   .text-large-center{text-align:center !important;}
@@ -756,7 +758,7 @@ padding: 0px 0px !important;
    .testimonial-section .testimonial-slider {background-size: contain !important;padding: 20px 0px 20px 0px !important;}
    .testimonial-section .test-img {width: 135px !important;height: 135px !important;}
    header .sub-header .navbar .navbar-brand .nav-link {padding: 0px 0px !important;}
-   header .sub-header .navbar .nav-link {padding: 10px 15px !important;width: 100%;text-align: left;text-transform: capitalize !important;}
+   header .sub-header .navbar .nav-link {padding: 10px 15px !important;width: 100%;text-align: left;text-transform: uppercase !important;}
    header .sub-header .navbar .navbar-nav{padding: 10px 0px 0px;}
    .title h2 {font-size: 30px !important;line-height: 36px !important;}
    .title p {font-size: 20px !important;line-height: 26px !important;}
@@ -833,8 +835,8 @@ padding: 0px 0px !important;
   .banner-section {min-height: 180px !important;}
   section.home-section-1 .slick-slide img{max-height: 350px !important;min-height: 310px !important;}
   section.home-section-1 .slider-inner-data {top: 45px !important;padding: 0px 0px !important;}
-  section.home-section-1 .slider-inner-data h2 {font-size: 30px !important;line-height: 36px !important;margin-bottom:15px !important;}
-  section.home-section-1 .slider-inner-data h3 {font-size: 18px !important;line-height: 22px !important;margin-bottom: 10px !important;}
+  section.home-section-1 .slider-inner-data h2 {font-size: 24px !important;line-height: 32px !important;margin-bottom:15px !important;}
+  section.home-section-1 .slider-inner-data h3 {font-size: 18px !important;line-height: 22px !important;margin-bottom: 15px !important;}
   section.contact-section-2 .media img{width: 20px !important;}
   footer .footer-data-inner ul li a, footer .footer-data-inner ul li a{padding:3px 0px !important}
 }

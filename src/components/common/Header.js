@@ -78,36 +78,27 @@ return (
 <Navbar.Collapse id="responsive-navbar-nav">
 <Nav className="ml-auto">
 <ListGroup as="ul" horizontal>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/">Home</Link>
 </ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/about">About</Link>
 </ListGroup.Item>
-{/* <ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
-<Link className="nav-link" to="/team">Team</Link>
-</ListGroup.Item> */}
-{/* <ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
-<Link className="nav-link" to="/blog">Blog</Link>
-</ListGroup.Item> */}
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/servicemain">Service</Link>
 </ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/servicemain">Service</Link>
 </ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/servicemain">Service</Link>
 </ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/servicemain">Service</Link>
 </ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+<ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/contact">Contact us</Link>
 </ListGroup.Item>
-{/* <ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
-<Link className="nav-link" to="/client">Client</Link>
-</ListGroup.Item> */}
 </ListGroup>
 </Nav>
 </Navbar.Collapse>
