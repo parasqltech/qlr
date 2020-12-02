@@ -47,7 +47,6 @@ export default () => (
       edges {
         node {
           acf {
-            title1
             title2
             title3
             slider1image {
@@ -70,20 +69,19 @@ export default () => (
         data.allWordpressWpCpt49.edges.map(
         prop => {
           return (
-                        <div className="slider-data">
-               <Image src={prop.node.acf.slider1image.source_url} className="img-fluid d-sm-inline d-none" />
-               <Image src={prop.node.acf.slider2image.source_url} className="img-fluid d-sm-none d-inline" />
-               <div className="slider-inner-data">
-               <Container>
-                <Row>
-                <Col xl={8} lg={12} md={12}>
-                  <h3 className="font-bold text-white">{prop.node.acf.title1}</h3>
-                  <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
-                  <h3 className="font-bold color-abf">{prop.node.acf.title3}</h3>
-                  <Button className="white font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
-                </Col>
-                </Row>
-               </Container>
+                <div className="slider-data">
+                  <Image src={prop.node.acf.slider1image.source_url} className="img-fluid d-sm-inline d-none" />
+                  <Image src={prop.node.acf.slider2image.source_url} className="img-fluid d-sm-none d-inline" />
+                  <div className="slider-inner-data">
+                  <Container>
+                    <Row>
+                    <Col xl={8} lg={12} md={12}>
+                      <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
+                      <h3 className="font-bold color-abf">{prop.node.acf.title3}</h3>
+                      <Button className="white font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
+                    </Col>
+                    </Row>
+                  </Container>
                </div>
             </div>
             
