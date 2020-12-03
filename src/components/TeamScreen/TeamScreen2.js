@@ -42,7 +42,7 @@ export default () => (
                                             </Link>
                                             
                                             <div className="texts">
-                                                <p className="font-regular text-white align-justify">{prop.node.acf.title1}</p>
+                                                <p className="font-regular text-white ">{prop.node.acf.title1}</p>
                                             </div>
                                         </div>
                                         <div className="lower-box">

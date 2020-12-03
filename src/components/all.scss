@@ -58,6 +58,7 @@ $color666 :#666;
 .font-24{font-size: 24px;line-height: 35px;}
 .font-25{font-size: 25px;line-height: 36px;}
 .font-40{font-size: 40px;line-height: 51px;}
+.font-50{font-size: 50px;line-height: 70px;}
 .font-60{font-size: 60px;line-height: 80px;}
 
 // font weight
@@ -361,8 +362,8 @@ section.home-section-1 .slider-inner-data
 }
 section.home-section-1 .slider-inner-data h2
 {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 50px;
+  line-height: 65px;
   margin-bottom: 25px;
 }
 section.home-section-1 .slider-inner-data h3
@@ -698,6 +699,7 @@ padding: 0px 0px !important;
 {
   .lg-mb-4{margin-bottom: 25px;}
   .mb-50 {margin-bottom: 30px !important;}
+  .font-50{font-size: 40px;line-height: 55px !important;}
   .font-60{font-size: 40px!important ;line-height: 55px !important;}
   section.home-section-6 .home-section-6-data{ min-height: 350px !important;background-size: cover !important;}
   .testimonial-section .slick-next {right: 0px !important}
@@ -795,6 +797,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   .font-16-line-height{font-size: 15px !important;line-height: 30px !important;}
   .font-24 {font-size: 20px !important;line-height: 32px !important;}
   .font-40{font-size: 30px!important;line-height: 41px!important;}
+  .font-50{font-size: 40px;line-height: 55px !important;}
   .font-60{font-size: 40px!important ;line-height: 55px !important;}
   section.home-section-6 .home-section-6-data {min-height: 300px !important;}
   .testimonial-section .testimonial-slider {background-size: contain !important; padding: 20px 0px 20px 0px !important;}
@@ -827,6 +830,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   .font-24 {font-size: 20px !important;line-height: 32px !important;}
   .font-25 {font-size: 22px !important;line-height: 30px !important;}
   .font-40{font-size: 24px!important;line-height: 35px!important;}
+  .font-50{font-size: 30px;line-height: 36px !important;}
   .font-60{font-size: 30px!important ;line-height: 36px !important;}
   section.home-section-6 .home-section-6-data {min-height: 250px !important;}
   .testimonial-section .test-img {width: 100px !important;height: 100px !important;}
@@ -1049,7 +1053,7 @@ section.team-section-2
   background-color: #23A5DD;
   padding: 7px 0px;
   border-radius: 0;
-  height: 50px;
+  height: 50%;
   border: none;
   line-height: 50px;
   align-content: center;
@@ -1066,10 +1070,16 @@ section.team-section-2
   background-color:#23A5DD;
   padding: 0 !important;
 }
+.team-block .inner-box .lower-box .social-box li a:hover
+{
+  color:#ffffff !important;
+}
 
 .team-block .inner-box:hover .lower-box .social-box{
   left:0px;
   opacity:1;
+  height: 100%;
+  border-radius: 0;
 }
 .texts
 {
@@ -1886,6 +1896,7 @@ section.client-section-2 .nav-item .nav-link:hover
     overflow: unset !important;
     -webkit-line-clamp: unset !important;
   }
+  .inner-data-card .card-body{padding-left: 0 !important;padding-right: 0 !important;}
 }
 @media all and (max-width:991px)
 {
@@ -1908,6 +1919,7 @@ section.home-section-1 .slick-dots{bottom: 15px !important;}
   footer .footer-data-inner p {margin-bottom: 20px !important;}
   .d-small-block{display: block !important;}
   .blog-details-data .card .date{right: 15px !important;}
+  .home-section-6-inner-data{padding: 0px 15px !important;}
 }
 
 // 30-11-2020
@@ -1917,9 +1929,12 @@ section.service-main-section-2
   padding: 50px 0px;
 }
 section.service-main-section-2 ul{
-  margin-bottom: 0 !important;
   padding-left: 0;
   list-style-type: disc !important;
+}
+section.service-main-section-2 ul li ul{
+  padding-left: 25px !important;
+  margin-top: 5px;
 }
 section.service-main-section-2 ul li{
   display: block;
@@ -1954,4 +1969,12 @@ section.contact-section-2 iframe{margin-bottom: 40px ;}
 footer .footer-data.social-li-pad ul li .nav-link
 {
   padding: 0 !important;
+}
+section.contact-section-3 .succes-block
+{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding:10px !important;
+  margin-top: 15px;
 }

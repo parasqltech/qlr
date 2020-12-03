@@ -157,7 +157,9 @@ class Contactsection3 extends Component {
                                 </Button>
                             </Col>
                             <Col xl={12} className="justify-content-center d-flex">
-                                    <p className={this.state.success}>Successfully</p>
+                                <div className={this.state.success}>
+                                    <p className="succes-block">Successfully</p>
+                                </div>
                             </Col>
                         </Row>
                     </Form>

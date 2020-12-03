@@ -88,10 +88,10 @@ return (
 <Link className="nav-link" to="/servicemain">Service</Link>
 </ListGroup.Item>
 <ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Service</Link>
+<Link className="nav-link" to="/servicemain">Geotechnical Service</Link>
 </ListGroup.Item>
 <ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Service</Link>
+<Link className="nav-link" to="/servicemain">Hydrogeology Service</Link>
 </ListGroup.Item>
 <ListGroup.Item as="li" className="font-16 font-semibold">
 <Link className="nav-link" to="/servicemain">Service</Link>

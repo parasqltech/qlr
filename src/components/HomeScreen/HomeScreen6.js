@@ -31,8 +31,10 @@ export default () => (
             <>
             <Row className="justify-content-center">
                 <Col xl={10} lg={10} md={12} sm={12}>
-                  <h2 className="font-60 font-bold mb-4">{prop.node.acf.title}</h2>
-                  <Button className="blue font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
+                  <div className="home-section-6-inner-data">
+                    <h2 className="font-60 font-bold mb-4">{prop.node.acf.title}</h2>
+                    <Button className="blue font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Button>
+                  </div>
                 </Col>
             </Row>
             
