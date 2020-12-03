@@ -60,9 +60,9 @@ export default () => (
                                             </ListGroup>
                                             <div class="content">
                                                 <h5>
-                                                    <Link className="nav-link" to="/">
-                                                    {prop.node.acf.title2}
-                                                    </Link>
+                                                    <span className="nav-link">
+                                                      {prop.node.acf.title2}
+                                                    </span>
                                                 </h5>
                                                 <div class="designation">{prop.node.acf.title3}</div>
                                             </div>

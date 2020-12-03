@@ -36,7 +36,7 @@ export default () => (
                   return (
                     <li className="nav-item">
                       <a
-                        className="nav-link active"
+                        className="nav-link active" target="_blank"
                         href={prop.url}
                         alt={prop.title}
                       >
