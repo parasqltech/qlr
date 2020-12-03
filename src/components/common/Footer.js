@@ -73,7 +73,6 @@ class Footer extends Component {
                     <Col xl={3} lg={12} md={12} sm={12} className="lg-mb-4">
                       <div className="footer-data social-li-pad">
                         <h3 className="font-bold font-18 mb-4">Contact Us</h3>
-                        
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" className="font-16 font-regular">
                               <div className="d-flex">    

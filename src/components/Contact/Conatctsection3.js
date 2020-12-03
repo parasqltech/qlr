@@ -60,8 +60,7 @@ class Contactsection3 extends Component {
     }
     submitForm() {
       if (this.validator.allValid()) {
-        alert('success');
-        this.setState({success: "d-none"});
+        this.setState({success: "d-block"});
         setTimeout(
             function() {
                 this.setState({success: "d-none"});
@@ -146,7 +145,7 @@ class Contactsection3 extends Component {
                             </Col>
                             <Col xl={12} lg={12} md={12}>
                                 <Form.Group controlId="">
-                                <Form.Control as="textarea" rows="5" placeholder="Message" value={this.state.message} onChange={this.message}/>
+                                <Form.Control as="textarea" className="font-18 font-regular color-666" rows="5" placeholder="Message" value={this.state.message} onChange={this.message}/>
                                 <span className="errormsg">
                                         {this.validator.message('Message', this.state.message, 'required|message')}
                                     </span>
@@ -157,8 +156,10 @@ class Contactsection3 extends Component {
                                     Send <FaAngleRight className="ml-1"/>
                                 </Button>
                             </Col>
+                            <Col xl={12} className="justify-content-center d-flex">
+                                    <p className={this.state.success}>Successfully</p>
+                            </Col>
                         </Row>
-                        <p className={this.state.success}>this is cust</p>
                     </Form>
                 </Container>
             </section>
