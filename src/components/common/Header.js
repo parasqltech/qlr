@@ -4,6 +4,15 @@ import { FaFacebookF,FaTwitter,FaLinkedinIn,FaInstagram,FaYoutube,FaPhoneAlt,FaE
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../images/logo.png'
 import MainMenu from '../Menu/MainMenu'
+import HeaderSocialFb from '../Menu/HeaderSocialFb'
+import HeaderSocialTwitter from '../Menu/HeaderSocialTwitter'
+import HeaderSocialInst from '../Menu/HeaderSocialInsta'
+import HeaderSocialLinked from '../Menu/HeaderSocialLinkedIn'
+import HeaderSocialYoutube from '../Menu/HeaderSocialYoutube'
+import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
+import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
+import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
+import HeaderSocialenvelopeIcon from '../Menu/HeaderSocialenvelopeIcon'
 class Header extends Component {
 state = {
 isTop: true,
@@ -31,22 +40,17 @@ return (
 <div className="d-flex justify-content-between ">
 <div className="first-li">
 <ListGroup as="ul" horizontal>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-facebook"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-twitter"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-instagram"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-linkedin"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-youtube"></i></Link></ListGroup.Item>
+<HeaderSocialFb/>
+<HeaderSocialTwitter/>
+<HeaderSocialInst/>
+<HeaderSocialLinked/>
+<HeaderSocialYoutube/>
 </ListGroup>
 </div>
 <div className="second-li">
 <ListGroup as="ul" horizontal>
-<ListGroup.Item as="li">
-<a href="tel:+61862623559" className="nav-link font-16 font-regular"><FaPhoneAlt className="font-16 font-regular"/>+61 8 6262 3559</a>
-</ListGroup.Item>
-<ListGroup.Item as="li">|</ListGroup.Item>
-<ListGroup.Item as="li">
-<a href="mailto:support@qltech.com.au" className="nav-link font-16 font-regular"><FaEnvelope className="font-16 font-regular"/>support@qltech.com.au</a>
-</ListGroup.Item>
+<HeaderSocialPhoneIcon/>
+<HeaderSocialenvelopeIcon/>
 </ListGroup>
 </div>
 </div>
@@ -56,13 +60,13 @@ return (
 <div className="d-flex justify-content-end medium-justify-center">
 <div className="first-li">
 <ListGroup as="ul" horizontal>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-phone"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-envelope"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-facebook"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-twitter"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-instagram"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-linkedin"></i></Link></ListGroup.Item>
-<ListGroup.Item as="li" className=""><Link className="nav-link p-0" to="/" target="_blank"><i className="fa fa-youtube"></i></Link></ListGroup.Item>
+<HeaderSocialPhone/>
+<HeaderSocialenvelope/>
+<HeaderSocialFb/>
+<HeaderSocialTwitter/>
+<HeaderSocialInst/>
+<HeaderSocialLinked/>
+<HeaderSocialYoutube/>
 </ListGroup>
 </div>
 </div>

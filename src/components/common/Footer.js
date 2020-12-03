@@ -12,7 +12,7 @@ import FooterServices from '../Footer/FooterServices'
 import FooterAddress from '../Footer/FooterAddress'
 import FooterEmail from '../Footer/FooterEmail'
 import FooterMobile from '../Footer/FooterMobile'
-
+import FooterParagraph from '../Footer/FooterParagraph'
 class Footer extends Component {
     render() {
         return (
@@ -27,7 +27,7 @@ class Footer extends Component {
                         <Image src={logo} fluid className="footer-logo mb-4"/>
                       </Link>
 
-                        <p className="font-16 font-regular">We are an Australian-based organisation providing technical services and digital solutions across the Resource sector, specialising in Exploration, Mining Open Pit and Underground Operations.</p>
+                        <FooterParagraph/>
                         <p className="font-16 font-regular mb-2">Contact with us :</p>
                           <ListGroup as="ul" horizontal className="align-items-center">
                             <ListGroup.Item as="li" className="font-16 font-regular">
