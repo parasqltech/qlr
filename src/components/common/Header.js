@@ -3,6 +3,7 @@ import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdo
 import { FaFacebookF,FaTwitter,FaLinkedinIn,FaInstagram,FaYoutube,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../images/logo.png'
+import MainMenu from '../Menu/MainMenu'
 class Header extends Component {
 state = {
 isTop: true,
@@ -16,6 +17,8 @@ this.setState({ isTop })
 }
 });
 }
+
+
 
 render() {
 
@@ -78,27 +81,28 @@ return (
 <Navbar.Collapse id="responsive-navbar-nav">
 <Nav className="ml-auto">
 <ListGroup as="ul" horizontal>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/">Home</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/about">About</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Service</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Geotechnical Service</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Hydrogeology Service</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/servicemain">Service</Link>
-</ListGroup.Item>
-<ListGroup.Item as="li" className="font-16 font-semibold">
-<Link className="nav-link" to="/contact">Contact us</Link>
-</ListGroup.Item>
+    {/* <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/">Home</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/about">About</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/servicemain">Service</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/servicemain">Geotechnical Service</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/servicemain">Hydrogeology Service</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/servicemain">Service</Link>
+    </ListGroup.Item>
+    <ListGroup.Item as="li" className="font-16 font-semibold">
+    <Link className="nav-link" to="/contact">Contact us</Link>
+    </ListGroup.Item> */}
+    <MainMenu/>
 </ListGroup>
 </Nav>
 </Navbar.Collapse>
