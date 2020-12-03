@@ -305,7 +305,7 @@ header .sub-header
     }
     li
     {
-      padding: 0px 30px;
+      padding: 0px 20px;
       border: none !important;
     }
     .list-group-horizontal>.list-group-item:first-child
@@ -1897,6 +1897,7 @@ section.client-section-2 .nav-item .nav-link:hover
     -webkit-line-clamp: unset !important;
   }
   .inner-data-card .card-body{padding-left: 0 !important;padding-right: 0 !important;}
+  .home-section-6-inner-data{padding: 0px 25px !important;}
 }
 @media all and (max-width:991px)
 {
@@ -1909,6 +1910,7 @@ section.home-section-1 .slick-dots{bottom: 15px !important;}
   section.service-section-4.about-section-3 {padding: 30px 0px 10px 0px !important;}
   .medium-justify-center{justify-content: center !important;}
   section.home-section-1 .slick-dots{display: none !important;}
+  .home-section-6-inner-data{padding: 0px 15px !important;}
 }
 @media all and (max-width:575px)
 {
@@ -1919,7 +1921,6 @@ section.home-section-1 .slick-dots{bottom: 15px !important;}
   footer .footer-data-inner p {margin-bottom: 20px !important;}
   .d-small-block{display: block !important;}
   .blog-details-data .card .date{right: 15px !important;}
-  .home-section-6-inner-data{padding: 0px 15px !important;}
 }
 
 // 30-11-2020
