@@ -29,7 +29,7 @@ export default () => (
           return (
           <div className="title">
             <h2 className="text-center">{prop.node.acf.heading}</h2>
-            <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            <p className="text-center">{prop.node.acf.paragraph}</p>
           </div>
             )
           }
