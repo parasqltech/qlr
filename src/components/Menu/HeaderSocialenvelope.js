@@ -34,7 +34,7 @@ export default () => (
               data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                 prop => {
                   return (
-                  <ListGroup.Item as="li" className=""><Link className="nav-link p-0" to={prop.url} target="_blank"><i className="fa fa-envelope"></i></Link></ListGroup.Item>
+                  <ListGroup.Item as="li" className=""><a className="nav-link p-0" href={prop.url} target="_blank"><i className="fa fa-envelope"></i></a></ListGroup.Item>
 
                     
           
