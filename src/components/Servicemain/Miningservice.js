@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Container,Image } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
-import card1 from '../../images/our-blog-2.png'
+import card1 from '../../images/blog-section-2-card-1.png'
 import arrowleft from '../../images/footer-arrow.png'
-class Servicesection1 extends Component {
+class Mining extends Component {
 
      
     render() {
@@ -175,4 +175,4 @@ class Servicesection1 extends Component {
     }
 }
 
-export default Servicesection1;
+export default Mining;
