@@ -6,6 +6,7 @@ import formname from '../../images/form-name.png'
 import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
 import SimpleReactValidator from 'simple-react-validator';
+import ContactScreenTitle3 from '../ContactScreen/ContactScreenTitle3'
 
 class Contactsection3 extends Component {
     constructor(props) {
@@ -85,8 +86,7 @@ class Contactsection3 extends Component {
             <section className="contact-section-3">
                 <Container>
                     <div className="title">
-                        <h2 className="text-center">Lorem ipsum dolor sit?</h2>
-                        <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <ContactScreenTitle3/>    
                     </div>
                     <Form>
                         <Row className="mt-4">
