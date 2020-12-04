@@ -7,6 +7,7 @@ import card2 from '../../images/home-card-2.png'
 import card3 from '../../images/home-card-3.png'
 import card4 from '../../images/home-card-4.png'
 import HsImage1 from '../HomeScreen/HsImage1'
+import HomeScreen3Title from '../HomeScreen/HomeScreen3Title'
 class HomeSection3 extends Component {
 
      
@@ -17,15 +18,8 @@ class HomeSection3 extends Component {
             
             <section className="home-section-3">
                 <Container>
-                    <div className="title">
-                      <h2 className="text-center">Lorem ipsum dolor sit?</h2>
-                      <p className="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-                    </div>
-                  
+                 <HomeScreen3Title/>
                   <HsImage1/>
-                    
-                    
-                  
                 </Container>
               </section>
 
