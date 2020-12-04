@@ -50,12 +50,12 @@ export default () => (
                                         <div className="lower-box">
                                             <ListGroup as="ul" className="social-box">
                                                 <ListGroup.Item as="li" className="">
-                                                    <Link className="nav-link font-22" to={prop.node.acf.link1}>
+                                                    <Link className="nav-link font-22" to={prop.node.acf.link1} target="_blank">
                                                         <FaLinkedinIn/>
                                                     </Link>
                                                 </ListGroup.Item>
                                                 <ListGroup.Item as="li" className="">
-                                                    <Link className="nav-link font-22" to="/">
+                                                    <Link className="nav-link font-22" to="/" target="_blank">
                                                         <FaEnvelope/>
                                                     </Link>
                                                 </ListGroup.Item>
