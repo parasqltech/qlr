@@ -3,6 +3,7 @@ import { Container,Image } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import card1 from '../../images/blog-section-2-card-1.png'
 import arrowleft from '../../images/footer-arrow.png'
+import line from '../../images/line.png'
 class Geotech extends Component {
 
      
@@ -75,7 +76,7 @@ class Geotech extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                             Pit slope and dump inspections
@@ -85,7 +86,7 @@ class Geotech extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                             Geotechnical Hazard Identification
@@ -95,7 +96,7 @@ class Geotech extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                             Pre &amp; post-blast inspections, hazard and mitigation measures
@@ -117,7 +118,7 @@ class Geotech extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                                 Prism or Automated total station and Radars
@@ -128,7 +129,7 @@ class Geotech extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                                 Blast vibration monitoring associated with critical slopes or heritage sites

@@ -35,12 +35,12 @@ export default () => (
                 prop => {
 
                   return(
-                    <Col xl={3} lg={3} md={6} sm={12} className="md-mb-4">
+                    <Col xl={3} lg={3} md={6} sm={12} className="md-mb-4 h-100">
                       <Card className="p-0 border-0">
                         <Card.Img variant="top" src={prop.node.acf.image.source_url} fluid />
-                        <Card.Body className="pl-0 pr-0 pb-0">
+                        <Card.Body className="pl-0 pr-0 pb-0 h-100">
                           <Card.Title className="font-22 font-bold">{prop.node.acf.title1}</Card.Title>
-                          <Card.Text className="line-break-2 font-14 font-regular">{prop.node.acf.title2}</Card.Text>
+                          <Card.Text className=" font-14 font-regular">{prop.node.acf.title2}</Card.Text>
                           <Link to={prop.node.acf.link} className="nav-link p-0 font-18 font-regular">Learn more<FaAngleRight className="pl-2" /> </Link>
                         </Card.Body>
                       </Card>

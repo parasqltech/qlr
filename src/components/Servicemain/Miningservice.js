@@ -3,6 +3,7 @@ import { Container,Image } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import card1 from '../../images/blog-section-2-card-1.png'
 import arrowleft from '../../images/footer-arrow.png'
+import line from '../../images/line.png'
 class Mining extends Component {
 
      
@@ -53,7 +54,7 @@ class Mining extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                             Trucking Calculators simplified, to give operational supervisors insights into day to day operations. Strategies to optimise Ancillary fleet’s KPI’s and time minimise operating hours. 
@@ -75,7 +76,7 @@ class Mining extends Component {
                                     <li class="font-16 font-regular ">
                                         <div class="d-flex">
                                             <div class="arrow-image mr-2">
-                                                <Image src={arrowleft} fluid/>
+                                                <Image src={line} fluid/>
                                             </div>
                                             <div class="arrow-data">
                                                 Pit to Port  Optimisations. Stockpile predictions to smoothen supply chain requirements.
