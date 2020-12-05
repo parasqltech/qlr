@@ -43,10 +43,11 @@ export default () => (
                       </div>
                       <Card.Body className="p-0">
                         <Card.Title className="font-22 font-bold">{prop.node.acf.title1}</Card.Title>
-                        <Card.Text className=" font-14 font-regular">{prop.node.acf.title2}</Card.Text>
+                        <Card.Text className=" font-14 font-regular mb-0">{prop.node.acf.title2}</Card.Text>
                       </Card.Body>
                     </Card>
-                   <div class="shape-one"></div><div class="shape-two"></div><div class="shape-three"></div>
+                   <div class="shape-one"></div>
+                   <div class="shape-two"></div>
                   </div>
                 </div>
             </Col>
