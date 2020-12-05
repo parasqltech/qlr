@@ -83,7 +83,7 @@ class Contactsection3 extends Component {
         return (
             <>
             
-            <section className="contact-section-3">
+            <section className="contact-section-3" id="contact3">
                 <Container>
                     <div className="title">
                     <ContactScreenTitle3/>    

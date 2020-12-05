@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 import Layout from '../components/Layout'
 import Servicemain1 from '../components/Servicemain/Servicemain1'
-import Geotech from '../components/Servicemain/Geotech'
+import Digitalservice from '../components/Servicemain/Digitalservice'
 import Footer from '../components/common/Footer'
 
-class GeotechService extends Component {
+class DigitalService extends Component {
     render() {
         return (
             <Layout>
               <>
                     <Servicemain1/>
-                    <Geotech/>
+                    <Digitalservice/>
                     <Footer/>
               </>
             </Layout>
         )
     }
 }
-export default GeotechService
+export default DigitalService

@@ -1535,7 +1535,7 @@ section.blog-section-2
 .side-sticky
 {
   position: sticky !important;
-  top: 160px;
+  top: 125px;
   overflow: hidden;
 }
 
@@ -1948,4 +1948,29 @@ section.contact-section-3 .succes-block
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1170px;
   }
+}
+
+// 05-12-20
+
+header .sub-header li.active .nav-link{color: #23A5DD !important;}
+header .sub-header li.active{background-color: unset !important;border: none !important;}
+
+span.line
+{
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+span.line:before
+{    
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 8px;
+  max-width: 8px;
+  max-height: 8px;
+  height: 8px;
+  background-color: #666;
+  border-radius: 4px;
 }

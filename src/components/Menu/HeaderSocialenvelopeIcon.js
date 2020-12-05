@@ -35,7 +35,7 @@ export default () => (
                 prop => {
                   return (
                   <ListGroup.Item as="li">
-                  <a href={prop.url} className="nav-link font-16 font-regular"><FaPhoneAlt className="font-16 font-regular"/>{prop.title}</a>
+                  <a href={prop.url} className="nav-link font-16 font-regular"><FaEnvelope className="font-16 font-regular"/>{prop.title}</a>
                   </ListGroup.Item>
                   )
                 }

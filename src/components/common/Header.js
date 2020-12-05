@@ -1,14 +1,11 @@
 import React, { Component,useState } from 'react';
 import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdown } from 'react-bootstrap'
-import { FaFacebookF,FaTwitter,FaLinkedinIn,FaInstagram,FaYoutube,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
+import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../images/logo.png'
 import MainMenu from '../Menu/MainMenu'
-import HeaderSocialFb from '../Menu/HeaderSocialFb'
 import HeaderSocialTwitter from '../Menu/HeaderSocialTwitter'
-import HeaderSocialInst from '../Menu/HeaderSocialInsta'
 import HeaderSocialLinked from '../Menu/HeaderSocialLinkedIn'
-import HeaderSocialYoutube from '../Menu/HeaderSocialYoutube'
 import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
 import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
 import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
@@ -40,11 +37,8 @@ return (
 <div className="d-flex justify-content-between ">
 <div className="first-li">
 <ListGroup as="ul" horizontal>
-<HeaderSocialFb/>
-<HeaderSocialTwitter/>
-<HeaderSocialInst/>
 <HeaderSocialLinked/>
-<HeaderSocialYoutube/>
+<HeaderSocialTwitter/>
 </ListGroup>
 </div>
 <div className="second-li">
@@ -62,11 +56,8 @@ return (
 <ListGroup as="ul" horizontal>
 <HeaderSocialPhone/>
 <HeaderSocialenvelope/>
-<HeaderSocialFb/>
-<HeaderSocialTwitter/>
-<HeaderSocialInst/>
 <HeaderSocialLinked/>
-<HeaderSocialYoutube/>
+<HeaderSocialTwitter/>
 </ListGroup>
 </div>
 </div>
@@ -85,27 +76,6 @@ return (
 <Navbar.Collapse id="responsive-navbar-nav">
 <Nav className="ml-auto">
 <ListGroup as="ul" horizontal>
-    {/* <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/">Home</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/about">About</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/servicemain">Service</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/servicemain">Geotechnical Service</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/servicemain">Hydrogeology Service</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/servicemain">Service</Link>
-    </ListGroup.Item>
-    <ListGroup.Item as="li" className="font-16 font-semibold">
-    <Link className="nav-link" to="/contact">Contact us</Link>
-    </ListGroup.Item> */}
     <MainMenu/>
 </ListGroup>
 </Nav>

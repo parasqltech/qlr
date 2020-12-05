@@ -78,7 +78,7 @@ export default () => (
                     <Col xl={9} lg={12} md={12}>
                       <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
                       <h3 className="font-bold color-abf">{prop.node.acf.title3}</h3>
-                      <Link to="/contact" className="button white font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Link>
+                      <Link to="/contact#contact3" className="button white font-16 font-semibold">know more <FaAngleRight className="ml-2"/></Link>
                     </Col>
                     </Row>
                   </Container>

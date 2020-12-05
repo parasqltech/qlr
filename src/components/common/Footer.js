@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { Container,Image,Row,Col,Card,Button,ListGroup } from 'react-bootstrap';
-import { FaFacebookF,FaInstagram,FaTwitter,FaPinterestP } from 'react-icons/fa'
+import { FaLinkedinIn,FaTwitter } from 'react-icons/fa'
 import logo from '../../images/logo.png'
 import arrowleft from '../../images/footer-arrow.png'
 import footermap from '../../images/footer-map.png'
@@ -32,22 +32,12 @@ class Footer extends Component {
                           <ListGroup as="ul" horizontal className="align-items-center">
                             <ListGroup.Item as="li" className="font-16 font-regular">
                             <Link className="nav-link p-0" target="_blank" to="/">
-                                <FaFacebookF/>
+                                <FaLinkedinIn/>
                             </Link>
                             </ListGroup.Item>
                             <ListGroup.Item as="li" className="font-16 font-regular">
                               <Link className="nav-link p-0" target="_blank" to="/">
-                                <FaInstagram/>
-                              </Link>
-                            </ListGroup.Item>
-                            <ListGroup.Item as="li" className="font-16 font-regular">
-                              <Link className="nav-link p-0" target="_blank" to="/">
                                 <FaTwitter/>
-                              </Link>
-                            </ListGroup.Item>
-                            <ListGroup.Item as="li" className="font-16 font-regular">
-                              <Link className="nav-link p-0" target="_blank" to="/">
-                                <FaPinterestP/>
                               </Link>
                             </ListGroup.Item>
                           </ListGroup>
