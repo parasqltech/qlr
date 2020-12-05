@@ -35,7 +35,7 @@ export default () => (
                 prop => {
 
                   return(
-                    <Col xl={3} lg={3} md={6} sm={12} className="md-mb-4 h-100">
+                    <Col xl={4} lg={4} md={6} sm={12} className="md-mb-4 h-100">
                       <Card className="p-0 border-0">
                         <Card.Img variant="top" src={prop.node.acf.image.source_url} fluid />
                         <Card.Body className="pl-0 pr-0 pb-0 h-100">
