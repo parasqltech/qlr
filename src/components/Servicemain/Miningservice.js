@@ -14,9 +14,7 @@ class Mining extends Component {
             
             <section className="service-main-section-2">
                 <Container>
-                <Row>
                     <MiningScreen2/>
-                </Row>
                 </Container>
             </section>
 
