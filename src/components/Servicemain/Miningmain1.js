@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container,Breadcrumb } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import ServicesScreen1 from '../ServicesScreen/ServicesScreen1'
+import MiningScreen1 from '../ServiceMainScreen/MiningScreen1'
 class Miningmain1 extends Component {
 
      
@@ -12,9 +13,7 @@ class Miningmain1 extends Component {
             <div className="main-padding-header">
                 <section className="banner-section">
                     <Container>
-                        <div className="text-white text-center">
-                        <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">Mining Engineering</h2>
-                        </div>
+                        <MiningScreen1/>
                     </Container>
                 </section>
             </div>

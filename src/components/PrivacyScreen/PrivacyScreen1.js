@@ -7,7 +7,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-    allWordpressWpCpt604 {
+    allWordpressWpCpt617 {
       edges {
         node {
           acf {
@@ -21,9 +21,9 @@ export default () => (
     render={data => (
     <>
       {data &&
-        data.allWordpressWpCpt604 &&
-        data.allWordpressWpCpt604.edges &&
-        data.allWordpressWpCpt604.edges.map(
+        data.allWordpressWpCpt617 &&
+        data.allWordpressWpCpt617.edges &&
+        data.allWordpressWpCpt617.edges.map(
         prop => {
           return (
             

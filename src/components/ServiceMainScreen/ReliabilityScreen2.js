@@ -7,11 +7,15 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-    allWordpressWpCpt577 {
+    allWordpressWpCpt594 {
       edges {
         node {
           acf {
             content
+            heading
+            image {
+              source_url
+            }
           }
         }
       }
@@ -21,14 +25,28 @@ export default () => (
     render={data => (
     <>
       {data &&
-        data.allWordpressWpCpt577 &&
-        data.allWordpressWpCpt577.edges &&
-        data.allWordpressWpCpt577.edges.map(
+        data.allWordpressWpCpt594 &&
+        data.allWordpressWpCpt594.edges &&
+        data.allWordpressWpCpt594.edges.map(
         prop => {
           return (
-            <>
-            {prop.node.acf.content}
-            </>
+            <Row>
+            <Col xl={12}>
+                <div className="title">
+                    <h2 className="text-left mb-0">{prop.node.acf.heading}</h2>
+                </div>
+            </Col>
+            <Col xl={6} lg={6} className="md-mb-4">
+            <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content}} className="" />
+            </Col>
+            <Col xl={6} lg={6} className="">
+                <div className="side-sticky">
+                    <div className="main-blog-image mb-3">
+                      <Image src={prop.node.acf.image.source_url} fluid/>
+                    </div>
+                </div>
+            </Col> 
+          </Row> 
           )
           }
         )}

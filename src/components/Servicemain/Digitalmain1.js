@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container,Breadcrumb } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import ServicesScreen1 from '../ServicesScreen/ServicesScreen1'
+import DigitalScreen1 from '../ServiceMainScreen/DigitalScreen1'
 class Digitalmain1 extends Component {
 
      
@@ -12,9 +13,7 @@ class Digitalmain1 extends Component {
             <div className="main-padding-header">
                 <section className="banner-section">
                     <Container>
-                        <div className="text-white text-center">
-                        <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">Digital Transformation</h2>
-                        </div>
+                        <DigitalScreen1/>
                     </Container>
                 </section>
             </div>
