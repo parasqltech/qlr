@@ -34,7 +34,7 @@ export default () => (
         prop => {
           return (
             
-            <Col xl={4} lg={4} md={12} className="mb-4 service-card">
+            <Col xl={6} lg={6} md={12} className="mb-4 service-card">
                 <div className="service-block-two h-100">
                    <div class="inner-box wow fadeInLeft  animated h-100" >
                     <Card className="border-0">

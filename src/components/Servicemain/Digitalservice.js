@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Image,Row,Col } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
-import card1 from '../../images/home-section-4-img-2.png'
+import card1 from '../../images/service-side-1.png'
 import arrowleft from '../../images/footer-arrow.png'
 class Digital extends Component {
 
@@ -16,7 +16,7 @@ class Digital extends Component {
                     <Row>
                         <Col xl={12}>
                             <div className="title">
-                                <h2 className="text-left mb-0">Digital Service</h2>
+                                <h2 className="text-left mb-0">Digital Transformation</h2>
                             </div>
                         </Col>
                         <Col xl={6} lg={6} className="md-mb-4">

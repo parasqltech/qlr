@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Image,Row,Col } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
-import card1 from '../../images/home-section-4-img-2.png'
+import card1 from '../../images/service-side-1.png'
 import arrowleft from '../../images/footer-arrow.png'
 class Reliabilityservices extends Component {
 
@@ -15,7 +15,7 @@ class Reliabilityservices extends Component {
                     <Row>
                         <Col xl={12}>
                             <div className="title">
-                                <h2 className="text-left mb-0">Reliability Engineering Service</h2>
+                                <h2 className="text-left mb-0">Reliability Engineering</h2>
                             </div>
                         </Col>
                         <Col xl={6} lg={6} className="md-mb-4">

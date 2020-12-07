@@ -793,7 +793,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   section.contact-section-3 form .form-group {margin-bottom: 20px !important;}
   section.contact-section-3 form .form-control.main,
   section.contact-section-3 form .input-group-text{height: 50px !important;}
-  .sub-footer{padding: 10px 0px !important;}
+  .sub-footer{padding: 15px 0px !important;}
 }
 @media all and (max-width:768px)
 {
@@ -815,16 +815,18 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   .theme-section-data {padding: 0px 0px 0px 0px !important;}
   .blog-details-data .card .card-body {padding: 25px 15px !important;}
   section.blog-details-section-2 .main-blog-details li:nth-child(even){margin-left: 40px !important;}
-  .banner-section {min-height: 225px !important;}
+  .banner-section {min-height: 200px !important;}
   section.home-section-1 .slick-prev,section.home-section-1 .slick-next{display: none !important;}
   section.testimonial-section .slick-prev,section.testimonial-section .slick-next{display: none !important;}
   section.home-section-1 .slider-inner-data{padding: 0px 0px !important;top: 40px !important;}
   section.home-section-1 .slider-inner-data h2 {font-size: 30px !important;line-height: 36px !important;margin-bottom:15px !important;}
    section.home-section-1 .slider-inner-data h3 {font-size: 20px !important;line-height: 25px !important;margin-bottom: 15px !important;}
    section.contact-section-2 .media img{width: 25px !important;}
+   section.privacy-section-2 .media img{width: 25px !important;}
    footer .footer-data-inner ul li a, footer .footer-data-inner ul li a{padding:2px 0px !important}
    section.contact-section-2 iframe{height: 250px !important;}
    section.contact-section-2 .media {padding: 20px 20px !important;}
+   section.privacy-section-2 .media {padding: 20px 20px !important;}
   .mb-50 {margin-bottom: 25px !important;}
   .home-section-6-inner-data{padding: 0px 15px !important;}
   .team-block .texts p{font-size: 15px;line-height: 25px;}.texts {padding: 10px 15px 30px 15px !important;}
@@ -861,6 +863,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   section.home-section-1 .slider-inner-data h2 {font-size: 24px !important;line-height: 32px !important;margin-bottom:15px !important;}
   section.home-section-1 .slider-inner-data h3 {font-size: 18px !important;line-height: 22px !important;margin-bottom: 15px !important;}
   section.contact-section-2 .media img{width: 20px !important;}
+  section.privacy-section-2 .media img{width: 20px !important;}
   footer .footer-data-inner ul li a, footer .footer-data-inner ul li a{padding:3px 0px !important}
 }
 
@@ -868,7 +871,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
 
 .banner-section
 {
-  min-height: 305px;
+  min-height: 215px;
   -webkit-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
   flex-flow: column wrap;
@@ -1973,4 +1976,65 @@ span.line:before
   height: 8px;
   background-color: #666;
   border-radius: 4px;
+}
+
+// 07-12-2020
+
+@media all and (max-width:767px)
+{
+  .sub-footer p
+  {
+    margin-bottom: 10px !important;
+  }
+  .sub-footer .text-left,
+  .sub-footer .text-right
+  {
+    text-align: center !important;
+  }
+}
+
+
+
+//privacy-main-section-2
+
+section.privacy-section-2
+{
+  padding: 50px 0px 30px 0px;
+}
+section.privacy-section-2 ul{
+  padding-left: 0;
+  margin-bottom: 15px !important;
+  list-style-type: disc !important;
+}
+section.privacy-section-2 ul li ul{
+  padding-left: 25px !important;
+  margin-top: 5px;
+}
+section.privacy-section-2 ul li{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  list-style-type: disc !important;
+}
+section.privacy-section-2 ul li:last-child{
+  margin-bottom: 0px !important;
+}
+section.privacy-section-2 ul li .arrow-image {
+  width: 10px;
+  vertical-align: top;
+}
+section.privacy-section-2 ul li .arrow-data {
+  width: calc(100% - 12px);
+  vertical-align: top;
+}
+
+section.privacy-section-2 .media
+{
+  background: #FAFAFA;
+  background-color: #FAFAFA;
+  padding: 25px 20px !important;
+}
+section.privacy-section-2 .blue-link
+{
+  color: #007bff;
 }

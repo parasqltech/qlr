@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Layout from '../components/Layout'
-import Servicemain1 from '../components/Servicemain/Servicemain1'
+import Digitalmain1 from '../components/Servicemain/Digitalmain1'
 import Digitalservice from '../components/Servicemain/Digitalservice'
 import Footer from '../components/common/Footer'
 
@@ -9,7 +9,7 @@ class DigitalService extends Component {
         return (
             <Layout>
               <>
-                    <Servicemain1/>
+                    <Digitalmain1/>
                     <Digitalservice/>
                     <Footer/>
               </>
