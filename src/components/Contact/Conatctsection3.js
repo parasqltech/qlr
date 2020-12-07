@@ -126,7 +126,7 @@ class Contactsection3 extends Component {
                                     </InputGroup>
                                     <span className="errormsg">
                                         {this.validator.message('Mobile Number', this.state.mobile, 'required|mobile')}
-                                        {this.validator.message('Mobile Number', this.state.mobile, 'numeric|min:0,num|max:11')}
+                                        {this.validator.message('Mobile Number', this.state.mobile, 'numeric|min:7,num|max:15')}
                                     </span>
                                 </Form.Group>
                             </Col>
