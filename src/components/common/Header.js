@@ -65,7 +65,7 @@ return (
 </div>
 <div className="sub-header">
 <Container>
-<Navbar collapseOnSelect expand="lg" className="p-0">
+<Navbar collapseOnSelect expand="xl" className="p-0">
 <Navbar.Brand>
 <Link className="nav-link p-0" to="/">
 <Image src={logo} className="img-fluid header-logo" />

@@ -39,7 +39,7 @@ export default () => (
               data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                 prop => {
                   return (
-                    <ListGroup.Item as="li" className="font-16 font-semibold font-semibold-to-regular">
+                    <ListGroup.Item as="li" className="font-16 font-semibold">
                       <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
                     </ListGroup.Item>
 					
