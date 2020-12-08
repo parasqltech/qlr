@@ -31,12 +31,12 @@ class Footer extends Component {
                         <p className="font-16 font-regular mb-2">Contact with us :</p>
                           <ListGroup as="ul" horizontal className="align-items-center">
                             <ListGroup.Item as="li" className="font-16 font-regular">
-                            <Link className="nav-link p-0" target="_blank" to="/">
+                            <Link className="nav-link p-0" target="_blank" to="http://linkedin.com/company/qlresources">
                                 <FaLinkedinIn/>
                             </Link>
                             </ListGroup.Item>
                             <ListGroup.Item as="li" className="font-16 font-regular">
-                              <Link className="nav-link p-0" target="_blank" to="/">
+                              <Link className="nav-link p-0" target="_blank" to="https://twitter.com/QlResources">
                                 <FaTwitter/>
                               </Link>
                             </ListGroup.Item>
@@ -80,7 +80,7 @@ class Footer extends Component {
                                      <Image src={footermail} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    <a href="mailto:support@qltech.com.au" className="nav-link font-16 font-regular">support@qltech.com.au</a>
+                                    <a href="mailto:raj@qlresources.com.au" className="nav-link font-16 font-regular">raj@qlresources.com.au</a>
                                   </div>
                               </div>
                             </ListGroup.Item>
@@ -90,7 +90,7 @@ class Footer extends Component {
                                      <Image src={footercall} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    <a href="tel:+61862623559" className="nav-link font-16 font-regular">+61 8 6262 3559</a>
+                                    <a href="tel:+61433312776" className="nav-link font-16 font-regular">+61 433 312 776</a>
                                   </div>
                               </div>
                             </ListGroup.Item>

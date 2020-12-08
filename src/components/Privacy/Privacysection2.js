@@ -15,9 +15,7 @@ class Privacysection2 extends Component {
             
             <section className="privacy-section-2">
                 <Container>
-                
-                    <PrivacyScreen2/>
-                
+                <PrivacyScreen2/>
                 </Container>
             </section>
 
