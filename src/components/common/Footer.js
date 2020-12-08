@@ -107,7 +107,7 @@ class Footer extends Component {
                       <p className="font-16 font-regular text-white mb-0">© 2020 <Link to="/" className="text-white">QLResources</Link> All rights reserved.</p>
                     </Col>
                     <Col xl={6} lg={6} md={6} className="text-right">
-                      <Link to="/privacystaement" className="text-white font-uppercase font-16 font-regular">Privacy Statement</Link>
+                      <Link to="/privacystaement" className="text-white font-16 font-regular">Privacy Statement</Link>
                     </Col>
                   </Row>
                 </Container>

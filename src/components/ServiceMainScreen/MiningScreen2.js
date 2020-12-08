@@ -30,11 +30,6 @@ export default () => (
         prop => {
           return (
           <Row>
-            <Col xl={12}>
-                <div className="title">
-                    <h2 className="text-left mb-0">Mining Engineering</h2>
-                </div>
-            </Col>
             <Col xl={6} lg={6} className="md-mb-4">
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content}} className="" />
             </Col>

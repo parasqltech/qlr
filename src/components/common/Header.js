@@ -11,7 +11,7 @@ import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
 import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
 import HeaderSocialenvelopeIcon from '../Menu/HeaderSocialenvelopeIcon'
 class Header extends Component {
-
+  
     state = {
         isTop: true,
     };
@@ -28,62 +28,65 @@ class Header extends Component {
 render() {
 
 return (
-<>
-<header className={this.state.isTop ? '' : 'sticky'} >
-<div className="social-header">
-<Container>
-<div className="d-md-block d-none">
-<div className="d-flex justify-content-between ">
-<div className="first-li">
-<ListGroup as="ul" horizontal>
-<HeaderSocialLinked/>
-<HeaderSocialTwitter/>
-</ListGroup>
-</div>
-<div className="second-li">
-<ListGroup as="ul" horizontal>
-<HeaderSocialPhoneIcon/>
-<HeaderSocialenvelopeIcon/>
-</ListGroup>
-</div>
-</div>
-</div>
+    <>
+    <header className={this.state.isTop ? '' : 'sticky'} >
+        <div className="social-header">
+        <Container>
+        <div className="d-md-block d-none">
+        <div className="d-flex justify-content-between ">
+        <div className="first-li">
+        <ListGroup as="ul" horizontal>
+        <HeaderSocialLinked/>
+        <HeaderSocialTwitter/>
+        </ListGroup>
+        </div>
+        <div className="second-li">
+        <ListGroup as="ul" horizontal>
+        <HeaderSocialPhoneIcon/>
+        <ListGroup.Item as="li" >
+            |
+        </ListGroup.Item>
+        <HeaderSocialenvelopeIcon/>
+        </ListGroup>
+        </div>
+        </div>
+        </div>
 
-<div className="d-md-none d-block">
-<div className="d-flex justify-content-end medium-justify-center">
-<div className="first-li">
-<ListGroup as="ul" horizontal>
-<HeaderSocialPhone/>
-<HeaderSocialenvelope/>
-<HeaderSocialLinked/>
-<HeaderSocialTwitter/>
-</ListGroup>
-</div>
-</div>
-</div>
-</Container>
-</div>
-<div className="sub-header">
-<Container>
-<Navbar collapseOnSelect expand="xl" className="p-0">
-<Navbar.Brand>
-<Link className="nav-link p-0" to="/">
-<Image src={logo} className="img-fluid header-logo" />
-</Link>
-</Navbar.Brand>
-<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-<Navbar.Collapse id="responsive-navbar-nav">
-<Nav className="ml-auto">
-<ListGroup as="ul" horizontal>
-    <MainMenu/>
-</ListGroup>
-</Nav>
-</Navbar.Collapse>
-</Navbar>
-</Container>
-</div>
-</header>
-</>
+        <div className="d-md-none d-block">
+        <div className="d-flex justify-content-end medium-justify-center">
+        <div className="first-li">
+        <ListGroup as="ul" horizontal>
+        <HeaderSocialPhone/>
+        <HeaderSocialenvelope/>
+        <HeaderSocialLinked/>
+        <HeaderSocialTwitter/>
+        </ListGroup>
+        </div>
+        </div>
+        </div>
+        </Container>
+        </div>
+        <div className="sub-header">
+        <Container>
+        <Navbar collapseOnSelect expand="xl" className="p-0">
+        <Navbar.Brand>
+        <Link className="nav-link p-0" to="/">
+        <Image src={logo} className="img-fluid header-logo" />
+        </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ml-auto">
+        <ListGroup as="ul" horizontal>
+            <MainMenu/>
+        </ListGroup>
+        </Nav>
+        </Navbar.Collapse>
+        </Navbar>
+        </Container>
+        </div>
+    </header>
+    </>
 );
 }
 }

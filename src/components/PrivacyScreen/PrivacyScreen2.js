@@ -34,29 +34,6 @@ export default () => (
           return (
            <Container>
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content}} className="" />
-            
-            <Row className="mb-4 align-items-center">
-              <Col xl={4} lg={4} md={6} className="sm-mb-4 ">
-                  <a href={prop.node.acf.linkemail} className="h-100">
-                  <Media className="align-items-center d-flex">
-                      <img width="30" className="mr-3 img-fluid" src={mail}/>
-                      <Media.Body>
-                          <p className="font-18 font-semibold color-666 mb-0">{prop.node.acf.email}</p>
-                      </Media.Body>
-                  </Media>
-                  </a>
-              </Col>
-              <Col xl={4} lg={4} md={6} className="">            
-                  <a href={prop.node.acf.linkphone} className="h-100">
-                  <Media className="align-items-center d-flex">
-                      <img width="30" className="mr-3 img-fluid" src={call}/>
-                      <Media.Body>
-                          <p className="font-18 font-semibold color-666 mb-0">+61 <span className="ml-1">{prop.node.acf.phone}</span></p>
-                      </Media.Body>
-                  </Media>
-                  </a>
-              </Col>
-          </Row>
 
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content2}} className="" />
           </Container>
