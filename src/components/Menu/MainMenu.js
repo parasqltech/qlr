@@ -1,6 +1,8 @@
 import React from "react"
 import {  ListGroup} from 'react-bootstrap'
 import { Link, StaticQuery , graphql} from 'gatsby';
+
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -22,6 +24,8 @@ export default () => (
         }
       }
     `}
+    
+    
     render={data => {
       return (
             <>

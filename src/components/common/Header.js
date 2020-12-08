@@ -11,20 +11,19 @@ import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
 import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
 import HeaderSocialenvelopeIcon from '../Menu/HeaderSocialenvelopeIcon'
 class Header extends Component {
-state = {
-isTop: true,
-};
 
-componentDidMount() {
-document.addEventListener('scroll', () => {
-const isTop = window.scrollY < 100;
-if (isTop !== this.state.isTop) {
-this.setState({ isTop })
-}
-});
-}
+    state = {
+        isTop: true,
+    };
 
-
+    componentDidMount() {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 100;
+            if (isTop !== this.state.isTop) {
+                this.setState({ isTop })
+            }
+        });
+    }
 
 render() {
 

@@ -865,6 +865,7 @@ section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   section.contact-section-2 .media img{width: 20px !important;}
   section.privacy-section-2 .media img{width: 20px !important;}
   footer .footer-data-inner ul li a, footer .footer-data-inner ul li a{padding:3px 0px !important}
+  section.privacy-section-2 .media p{font-size: 18px !important;line-height: 30px !important;}
 }
 
 // banner-section
@@ -2004,6 +2005,13 @@ section.privacy-section-2 .media
   background-color: #FAFAFA;
   padding: 25px 20px !important;
 }
+section.privacy-section-2 .media p{
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color:#666 !important;
+  margin-bottom: 0 !important;
+  line-height: 35px !important;
+}
 section.privacy-section-2 .blue-link
 {
   color: #007bff;
@@ -2071,7 +2079,8 @@ section.service-main-section-2 ul li .arrow-data {
 
 // remove end
 
-section.service-main-section-2 h2
+section.service-main-section-2 h2,
+section.privacy-section-2 h2
 {
   font-size: 40px;
   line-height: 52px;
@@ -2079,14 +2088,17 @@ section.service-main-section-2 h2
   margin-bottom: 30px;
   color: #303030!important;
 }
-section.service-main-section-2 h3
+section.service-main-section-2 h3 span{font-weight: 700 !important;}
+section.service-main-section-2 h3,
+section.privacy-section-2 h3
 {
   font-weight: 700!important;
   font-size: 25px;
   line-height: 36px;
   color: #303030!important;
 }
-section.service-main-section-2 p
+section.service-main-section-2 p,
+section.privacy-section-2 p
 {
   font-size: 16px;
   line-height: 32px;
@@ -2096,7 +2108,8 @@ section.service-main-section-2 p
 }
 @media (max-width: 992px)
 {
-  section.service-main-section-2 h2 {
+  section.service-main-section-2 h2,
+  section.privacy-section-2 h2 {
     font-size: 30px!important;
     line-height: 36px!important;
   }
@@ -2105,18 +2118,21 @@ section.service-main-section-2 p
 @media (max-width: 768px)
 {
   section.service-main-section-2 p,
-  section.service-main-section-2 ul li {
+  section.service-main-section-2 ul li,
+  section.privacy-section-2 p {
     font-size: 15px!important;
     line-height: 30px!important;
   }
 }
 @media (max-width: 576px)
 {
-  section.service-main-section-2 h2 {
+  section.service-main-section-2 h2,
+  section.privacy-section-2 h2 {
     font-size: 26px!important;
     line-height: 35px!important;
   }
-  section.service-main-section-2 h3 {
+  section.service-main-section-2 h3,
+  section.privacy-section-2 h3 {
     font-size: 22px!important;
     line-height: 30px!important;
   }

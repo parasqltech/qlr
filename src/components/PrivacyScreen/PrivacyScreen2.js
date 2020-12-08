@@ -33,9 +33,8 @@ export default () => (
         prop => {
           return (
            <Container>
-            <Col xl={6} lg={6} className="md-mb-4">
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content}} className="" />
-            </Col>
+            
             <Row className="mb-4 align-items-center">
               <Col xl={4} lg={4} md={6} className="sm-mb-4 ">
                   <a href={prop.node.acf.linkemail} className="h-100">
@@ -58,9 +57,8 @@ export default () => (
                   </a>
               </Col>
           </Row>
-          <Col xl={6} lg={6} className="md-mb-4">
+
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content2}} className="" />
-          </Col> 
           </Container>
           )
           }
