@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Breadcrumb } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
+import ProjectScreen1 from '../ProjectScreen/ProjectScreen1'
 class ProjectSection1 extends Component {
 
      
@@ -11,9 +12,7 @@ class ProjectSection1 extends Component {
             <div className="main-padding-header">
                 <section className="banner-section">
                     <Container>
-                        <div className="text-white text-center">
-                            <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">bgc</h2>
-                        </div>
+                        <ProjectScreen1/>
                     </Container>
                 </section>
             </div>
