@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { Container,Image,Row,Col,Card,Button,ListGroup } from 'react-bootstrap';
 import { FaLinkedinIn,FaTwitter } from 'react-icons/fa'
-import logo from '../../images/logoHD.png'
+import logo from '../../images/QLRlogo.svg'
 import arrowleft from '../../images/footer-arrow.png'
 import footermap from '../../images/footer-map.png'
 import footermail from '../../images/footer-envelop.png'

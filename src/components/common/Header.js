@@ -2,7 +2,7 @@ import React, { Component,useState } from 'react';
 import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdown } from 'react-bootstrap'
 import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import logo from '../../images/logoHD.png'
+import logo from '../../images/QLRlogo.svg'
 import HeaderSocialTwitter from '../Menu/HeaderSocialTwitter'
 import HeaderSocialLinked from '../Menu/HeaderSocialLinkedIn'
 import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
