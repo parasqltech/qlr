@@ -44,7 +44,7 @@ export default () => (
                                      <Image src={arrowleft} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data">
-                                    <Link to={prop.url} className="nav-link p-0"> {prop.title}</Link>
+                                    <Link to={"/"+prop.url.toLowerCase().replace("http://", '')} className="nav-link p-0"> {prop.title}</Link>
                                   </div>
                               </div>
           </ListGroup.Item>

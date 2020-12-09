@@ -2,7 +2,7 @@ import React, { Component,useState } from 'react';
 import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdown } from 'react-bootstrap'
 import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import logo from '../../images/logo.png'
+import logo from '../../images/logoHD.png'
 import HeaderSocialTwitter from '../Menu/HeaderSocialTwitter'
 import HeaderSocialLinked from '../Menu/HeaderSocialLinkedIn'
 import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
@@ -24,17 +24,6 @@ class Header extends Component {
         });
     }
     
-    constructor(props) {
-        super(props)
-        this.toggleClass= this.toggleClass.bind(this);
-        this.state = {
-        activeIndex: 0
-        }
-    }
-
-    toggleClass(index, e) {
-        this.setState({ activeIndex: index });
-      };
 
 render() {
 
@@ -125,7 +114,7 @@ return (
                                         (prop,i) => {
                                             return (
                                             <ListGroup.Item as="li" className="font-16 font-semibold">
-                                                <Link className={this.state.activeIndex==i ? 'nav-link active': 'nav-link'} onClick={this.toggleClass.bind(this, i)} to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
+                                                <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
                                             </ListGroup.Item>
 
                                             )

@@ -20,10 +20,17 @@ class HomeSection2 extends Component {
         dots: false,
         infinite: true,
         autoplay:true,
-        autoplaySpeed:2000,
+        autoplaySpeed:1800,
         slidesToShow: 6,
         slidesToScroll: 1, 
         responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1
+            }
+          },
          {
            breakpoint: 800,
            settings: {

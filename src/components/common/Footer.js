@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { Container,Image,Row,Col,Card,Button,ListGroup } from 'react-bootstrap';
 import { FaLinkedinIn,FaTwitter } from 'react-icons/fa'
-import logo from '../../images/logo.png'
+import logo from '../../images/logoHD.png'
 import arrowleft from '../../images/footer-arrow.png'
 import footermap from '../../images/footer-map.png'
 import footermail from '../../images/footer-envelop.png'
@@ -59,7 +59,7 @@ class Footer extends Component {
                         </ListGroup>
                       </div>
                     </Col>
-                    <Col xl={3} lg={12} md={12} sm={12} className="lg-mb-4">
+                    <Col xl={3} lg={12} md={12} sm={12} className="">
                       <div className="footer-data social-li-pad">
                         <h3 className="font-bold font-18 mb-4">Contact Us</h3>
                         <ListGroup as="ul">

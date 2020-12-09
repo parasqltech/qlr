@@ -40,11 +40,11 @@ export default () => (
                 <div className="bg-gray p-4 mb-0 h-100">
                   <div className="mb-30">
                       <p className="font-bold font-22 color-303030">{prop.node.acf.title1}</p>
-                      <p className="font-18 font-regular mb-0">{prop.node.acf.paragraph1}</p>
+                      <p className="font-16 font-regular mb-0">{prop.node.acf.paragraph1}</p>
                   </div>
                   <div>
                     <p className="font-bold font-22 color-303030">{prop.node.acf.title2}</p>
-                      <p className="font-18 font-regular mb-0">{prop.node.acf.paragraph2}</p>
+                      <p className="font-16 font-regular mb-0">{prop.node.acf.paragraph2}</p>
                   </div>
                 </div>  
             </Col>
