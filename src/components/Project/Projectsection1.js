@@ -12,7 +12,7 @@ class ProjectSection1 extends Component {
                 <section className="banner-section">
                     <Container>
                         <div className="text-white text-center">
-                            <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">bgcc</h2>
+                            <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">bgc</h2>
                         </div>
                     </Container>
                 </section>
