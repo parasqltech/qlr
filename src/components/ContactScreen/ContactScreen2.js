@@ -28,6 +28,9 @@ export default () => (
               imagemobile {
                 source_url
               }
+              link1
+              link2
+              link3
             }
           }
         }
@@ -58,9 +61,9 @@ export default () => (
                     
                     <p className="font-25 font-regular text-center mb-30">{prop.node.acf.paragraph1}</p>
 
-                    <Row className="mb-4 align-items-center">
+                    <Row className="mb-3 md-mb-0 align-items-center">
                         <Col xl={4} lg={4} md={12} className="md-mb-4">
-                            <a href="https://www.google.com/maps?ll=-31.955771,115.859075&z=16&t=m&hl=en&gl=IN&mapclient=embed&q=45+St+Georges+Terrace+Perth+WA+6000+Australia" target="_blank" className="h-100">
+                            <a href={prop.node.acf.link1} target="_blank" className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagelocation.source_url}/>
                                   <Media.Body>
@@ -70,7 +73,7 @@ export default () => (
                             </a>
                         </Col>
                         <Col xl={4} lg={4} md={12} className="md-mb-4 ">
-                            <a href="mailto:raj@qlresources.com.au" className="h-100">
+                            <a href={prop.node.acf.link2} className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imageEmail.source_url}/>
                                   <Media.Body>
@@ -80,14 +83,14 @@ export default () => (
                             </a>
                         </Col>
                         <Col xl={4} lg={4} md={12} className="md-mb-4 " id="contact3">            
-                            <a href="tel:+61410881616" className="h-100">
+                            <div className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagemobile.source_url}/>
                                   <Media.Body>
-                                      <p className="font-18 font-semibold color-666 mb-0">+61 <span className="ml-1">{prop.node.acf.mobile}</span></p>
+                                      <a href={prop.node.acf.link3} className="font-18 font-semibold color-666 mb-0 d-block"><span className="mr-0">+</span> {prop.node.acf.mobile}</a>
                                   </Media.Body>
                               </Media>
-                            </a>
+                            </div>
                         </Col>
                     </Row>
 

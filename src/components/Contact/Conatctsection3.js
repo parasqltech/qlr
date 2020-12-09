@@ -145,7 +145,7 @@ class Contactsection3 extends Component {
                             </Col>
                             <Col xl={12} lg={12} md={12}>
                                 <Form.Group controlId="">
-                                <Form.Control as="textarea" className="font-18 font-regular color-666" rows="5" placeholder="Message" value={this.state.message} onChange={this.message}/>
+                                <Form.Control as="textarea" className="font-18 font-regular color-666" rows="4" placeholder="Message" value={this.state.message} onChange={this.message}/>
                                 <span className="errormsg">
                                         {this.validator.message('Message', this.state.message, 'required|message')}
                                     </span>
