@@ -38,7 +38,7 @@ export default () => (
                                 <div className="team-block">
                                     <div className="inner-box">
                                         <div className="image">
-                                            <Link className="nav-link p-0" to="/">
+                                            <Link className="nav-link p-0">
                                                 <Image src={prop.node.acf.image.source_url} className="" fluid/>
                                             </Link>
                                             
