@@ -18,7 +18,7 @@ class Footer extends Component {
         return (
             <>
             
-            <footer>
+            <footer id="footer">
                 <Container>
                   <Row>
                     <Col xl={3} lg={6} md={12} sm={12} className="lg-mb-4">

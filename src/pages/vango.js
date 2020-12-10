@@ -1,21 +1,21 @@
 import React, {Component} from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import ProjectSection1 from '../components/Project/Projectsection1'
-import ProjectSection2 from '../components/Project/Projectsection2'
+import VangoSection1 from '../components/Project/Vangosection1'
+import VangoSection2 from '../components/Project/Vangosection2'
 import Footer from '../components/common/Footer'
 
-class Project extends Component {
+class Vango extends Component {
     render() {
         return (
             <Layout>
               <>
-                    <ProjectSection1/>
-                    <ProjectSection2/>
+                    <VangoSection1/>
+                    <VangoSection2/>
                     <Footer/>
               </>
             </Layout>
         )
     }
 }
-export default Project
+export default Vango

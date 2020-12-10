@@ -6,9 +6,9 @@ import Homesection2 from '../components/Home/Homesection2'
 import Homesection3 from '../components/Home/Homesection3'
 import Homesection4 from '../components/Home/Homesection4'
 // import Homesection5 from '../components/Home/Homesection5'
-import Homesection6 from '../components/Home/Homesection6'
+// import Homesection6 from '../components/Home/Homesection6'
 // import Homesection7 from '../components/Home/Homesection7'
-import Testimonialsection from '../components/Home/Testimonial-section'
+// import Testimonialsection from '../components/Home/Testimonial-section'
 import Footer from '../components/common/Footer'
 
 class MainPage extends Component {
@@ -21,9 +21,9 @@ class MainPage extends Component {
                     <Homesection3/>
                     <Homesection4/>
                     {/* <Homesection5/> */}
-                    <Homesection6/>
+                    {/* <Homesection6/> */}
                     {/* <Homesection7/> */}
-                    <Testimonialsection/>
+                    {/* <Testimonialsection/> */}
                     <Footer/>
               </>
             </Layout>

@@ -59,7 +59,7 @@ export default () => (
                         frameBorder="0" 
                         allowFullScreen/>
                     
-                    <p className="font-25 font-regular text-center mb-30">{prop.node.acf.paragraph1}</p>
+                    <p className="font-25 font-regular text-center mb-30" id="contact3">{prop.node.acf.paragraph1}</p>
 
                     <Row className="mb-3 md-mb-0 align-items-center">
                         <Col xl={4} lg={4} md={12} className="md-mb-4">
@@ -72,17 +72,17 @@ export default () => (
                               </Media>
                             </a>
                         </Col>
-                        <Col xl={4} lg={4} md={12} className="md-mb-4 ">
+                        <Col xl={4} lg={4} md={12} className="md-mb-4" id="contactnew3">
                             <a href={prop.node.acf.link2} className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imageEmail.source_url}/>
-                                  <Media.Body>
+                                  <Media.Body id="contactnewnew3">
                                       <p className="font-18 font-semibold color-666 mb-0">{prop.node.acf.email}</p>
                                   </Media.Body>
                               </Media>
                             </a>
                         </Col>
-                        <Col xl={4} lg={4} md={12} className="md-mb-4 " id="contact3">            
+                        <Col xl={4} lg={4} md={12} className="md-mb-4" >            
                             <div className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagemobile.source_url}/>

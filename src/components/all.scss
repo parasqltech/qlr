@@ -467,7 +467,7 @@ img:focus{
 }
 .home-section-2 .slider-data
 {
-  padding: 0px 10px;
+  padding: 0px 20px;
   justify-content: center;
   display: flex;
 }
@@ -506,7 +506,7 @@ img:focus{
 
 .home-section-4
 {
-  padding: 50px 0px;
+  padding: 50px 0px 20px 0px;
 }
 .inner-data-card
 {
@@ -756,6 +756,8 @@ padding: 0px 0px !important;
     padding:0px !important;
     line-height: 35px !important;
   }
+  section.home-section-1 .slick-prev{left: 15px !important;}
+  section.home-section-1 .slick-next{right: 15px !important;}
   .home-section-1 .slick-prev:before,
   .home-section-1 .slick-next:before {
     line-height: 35px !important;
@@ -1869,6 +1871,8 @@ section.client-section-2 .nav-item .nav-link:hover
 {
 .font-semibold-to-regular{font-weight: 500 !important;}
 section.home-section-1 .slick-dots{bottom: 15px !important;}
+section.contact-section-2 {padding: 30px 0px 10px 0px !important;}
+button.white, .button.white{padding: 8px 15px !important;}
 }
 @media all and (max-width:767px)
 {
@@ -2061,12 +2065,13 @@ section.service-main-section-2 ul li{
 section.service-main-section-2 ul li:before
 {
   position: absolute;
-  top: 9px;
+  top: 11px;
   left: -20px;
   content: "";
-  background: url('../images/footer-arrow.png');
+  background: #666 !important;
   width: 8px;
-  height: 13px;
+  height: 8px;
+  border-radius: 4px;
 }
 section.service-main-section-2 ul ul li:before
 {
@@ -2074,10 +2079,9 @@ section.service-main-section-2 ul ul li:before
   top: 10px;
   left: -20px;
   content: "";
-  background: #666 !important;
+  background: url('../images/footer-arrow.png') !important;
   width: 8px;
-  height: 8px;
-  border-radius: 4px;
+  height: 13px;
 }
 
 // remove start 

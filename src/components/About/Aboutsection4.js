@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container,Image,Row,Col,ListGroup } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { FaLinkedinIn,FaEnvelope } from 'react-icons/fa'
-import img1 from '../../images/team-1.png'
 import TeamScreen2 from '../TeamScreen/TeamScreen2'
 import TeamScreen2Heading from '../TeamScreen/TeamScreen2Heading'
 class Aboutsection3 extends Component {

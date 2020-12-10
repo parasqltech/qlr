@@ -3,7 +3,6 @@ import { Container,Image,Row,Col,ListGroup } from 'react-bootstrap';
 import { FaLinkedinIn,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
-
 export default () => (
   <StaticQuery
     query={graphql`
@@ -55,7 +54,7 @@ export default () => (
                                                     </Link>
                                                 </ListGroup.Item>
                                                 <ListGroup.Item as="li" className="">
-                                                    <Link className="nav-link font-22" to="/" target="_blank">
+                                                    <Link className="nav-link font-22" to="/about#footer">
                                                         <FaEnvelope/>
                                                     </Link>
                                                 </ListGroup.Item>
