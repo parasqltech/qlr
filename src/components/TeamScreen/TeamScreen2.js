@@ -35,42 +35,40 @@ export default () => (
           return (
             
              <Col xl={4} lg={4} md={6} sm={12} className="mb-4">
-                                <div className="team-block">
-                                    <div className="inner-box">
-                                        <div className="image">
-                                            <Link className="nav-link p-0">
-                                                <Image src={prop.node.acf.image.source_url} className="" fluid/>
-                                            </Link>
-                                            
-                                            <div className="texts">
-                                                <p className="font-regular text-white ">{prop.node.acf.title1}</p>
-                                            </div>
-                                        </div>
-                                        <div className="lower-box">
-                                            <ListGroup as="ul" className="social-box">
-                                                <ListGroup.Item as="li" className="">
-                                                    <Link className="nav-link font-22" to={prop.node.acf.link1} target="_blank">
-                                                        <FaLinkedinIn/>
-                                                    </Link>
-                                                </ListGroup.Item>
-                                                <ListGroup.Item as="li" className="">
-                                                    <Link className="nav-link font-22" to="/about#footer">
-                                                        <FaEnvelope/>
-                                                    </Link>
-                                                </ListGroup.Item>
-                                            </ListGroup>
-                                            <div class="content">
-                                                <h5>
-                                                    <span className="nav-link">
-                                                      {prop.node.acf.title2}
-                                                    </span>
-                                                </h5>
-                                                <div class="designation">{prop.node.acf.title3}</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
+                <div className="team-block">
+                    <div className="inner-box">
+                        <div className="image">
+                              <Image src={prop.node.acf.image.source_url} className="" fluid/>
+                            
+                            <div className="texts">
+                                <p className="font-regular text-white ">{prop.node.acf.title1}</p>
+                            </div>
+                        </div>
+                        <div className="lower-box">
+                            <ListGroup as="ul" className="social-box">
+                                <ListGroup.Item as="li" className="">
+                                    <Link className="nav-link font-22" to={prop.node.acf.link1} target="_blank">
+                                        <FaLinkedinIn/>
+                                    </Link>
+                                </ListGroup.Item>
+                                <ListGroup.Item as="li" className="">
+                                    <Link className="nav-link font-22" to="/about#footer">
+                                        <FaEnvelope/>
+                                    </Link>
+                                </ListGroup.Item>
+                            </ListGroup>
+                            <div class="content">
+                                <h5>
+                                    <span className="nav-link">
+                                      {prop.node.acf.title2}
+                                    </span>
+                                </h5>
+                                <div class="designation">{prop.node.acf.title3}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Col>
             
             )
           }
