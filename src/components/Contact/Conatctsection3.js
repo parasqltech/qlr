@@ -88,12 +88,12 @@ class Contactsection3 extends Component {
                     <div className="title">
                     <ContactScreenTitle3/>    
                     </div>
-                    <Form>
+                    <Form className='gform' method="POST" action="https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec">
                         <Row className="mt-4">
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.fname} onChange={this.fname} className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
+                                        <input type="text" value={this.state.fname} onChange={this.fname} Name='firstName' className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -106,7 +106,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.lname} onChange={this.lname} className="form-control main font-18 font-regular color-666" placeholder="Last Name" /> 
+                                        <input type="text" value={this.state.lname} onChange={this.lname} Name='lastName' className="form-control main font-18 font-regular color-666" placeholder="Last Name" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -119,7 +119,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.mobile} onChange={this.mobile} className="form-control main font-18 font-regular color-666" placeholder="Mobile Number" /> 
+                                        <input type="text" value={this.state.mobile} onChange={this.mobile} Name='mobile' className="form-control main font-18 font-regular color-666" placeholder="Mobile Number" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formcall} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -133,7 +133,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.email} onChange={this.email} className="form-control main font-18 font-regular color-666" placeholder="Email" />        
+                                        <input type="text" value={this.state.email} onChange={this.email} Name='email' className="form-control main font-18 font-regular color-666" placeholder="Email" />        
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formmail} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -145,14 +145,14 @@ class Contactsection3 extends Component {
                             </Col>
                             <Col xl={12} lg={12} md={12}>
                                 <Form.Group controlId="">
-                                <Form.Control as="textarea" className="font-18 font-regular color-666" rows="4" placeholder="Message" value={this.state.message} onChange={this.message}/>
+                                <Form.Control as="textarea" Name='message' className="font-18 font-regular color-666" rows="4" placeholder="Message" value={this.state.message} onChange={this.message}/>
                                 <span className="errormsg">
                                         {this.validator.message('Message', this.state.message, 'required|message')}
                                     </span>
                                 </Form.Group>
                             </Col>
                             <Col xl={12} lg={12} md={12} className="justify-content-center d-flex">
-                                <Button variant="" type="button" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
+                                <Button variant="" type="submit" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
                                     Send <FaAngleRight className="ml-1"/>
                                 </Button>
                             </Col>
