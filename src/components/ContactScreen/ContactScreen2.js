@@ -87,7 +87,7 @@ export default () => (
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagemobile.source_url}/>
                                   <Media.Body>
-                                      <a href={prop.node.acf.link3} className="font-18 font-semibold color-666 mb-0 d-block"><span className="mr-0">+</span> {prop.node.acf.mobile}</a>
+                                      <a href={prop.node.acf.link3} className="font-18 font-semibold color-666 mb-0 d-block">{prop.node.acf.mobile}</a>
                                   </Media.Body>
                               </Media>
                             </div>
