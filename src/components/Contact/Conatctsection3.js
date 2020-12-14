@@ -61,7 +61,6 @@ class Contactsection3 extends Component {
     }
     submitForm() {
       if (this.validator.allValid()) {
-        alert('if');
         this.setState({success: "d-block"});
         setTimeout(
             function() {
@@ -72,9 +71,7 @@ class Contactsection3 extends Component {
         );
         this.setState({IsSubmit: true});  
         
-        
       } else {
-        alert('else');
         event.preventDefault()
         this.setState({success: "d-none"});
         this.validator.showMessages();
@@ -129,7 +126,7 @@ class Contactsection3 extends Component {
                                     </InputGroup>
                                     <span className="errormsg">
                                         {this.validator.message('Mobile Number', this.state.mobile, 'required|mobile')}
-                                        {this.validator.message('Mobile Number', this.state.mobile, 'numeric|min:7,num|max:15')}
+                                        {this.validator.message('Mobile Number', this.state.mobile, 'numeric|min:7|max:15')}
                                     </span>
                                 </Form.Group>
                             </Col>
