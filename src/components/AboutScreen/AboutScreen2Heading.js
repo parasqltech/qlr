@@ -13,6 +13,7 @@ export default () => (
           acf {
             heading
             paragraph
+            paragraph2
           }
         }
       }
@@ -30,6 +31,7 @@ export default () => (
           <div className="title">
             <h2 className="text-center font-bold">{prop.node.acf.heading}</h2>
             <p className="text-left">{prop.node.acf.paragraph}</p>
+            <p className="text-left">{prop.node.acf.paragraph2}</p>
           </div>
             )
           }
