@@ -78,8 +78,8 @@ export default () => (
                     <Row>
                     <Col xl={8} lg={12} md={12}>
                       <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
-                      <h3 className="font-bold color-abf">{prop.node.acf.title3}</h3>
-                      <h3 className="font-bold color-abf">{prop.node.acf.title4}</h3>
+                      <h3 className="font-bold color-abf">{prop.node.acf.title3}<br></br>{prop.node.acf.title4}</h3>
+                      {/* <h3 className="font-bold color-abf"></h3> */}
                       <div className="d-lg-inline d-none">
                         <Link to="/contact#contact3" className="button white font-16 font-semibold">know more<FaAngleRight className="ml-2"/></Link>
                       </div>

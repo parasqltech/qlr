@@ -32,8 +32,7 @@ export default () => (
           return (
             <div className="title">
                 <h2 className="text-center">{prop.node.acf.title}</h2>
-                <p className="text-center">{prop.node.acf.paragraph}</p>
-                <p className="text-center">{prop.node.acf.paragraph2}</p>
+                <p className="text-center">{prop.node.acf.paragraph}<br></br>{prop.node.acf.paragraph2}</p>
             </div>
             )
           }
