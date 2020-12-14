@@ -80,7 +80,7 @@ class Footer extends Component {
                                      <Image src={footermail} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    <a href="mailto:support@qlresoureces.com.au" className="nav-link font-16 font-regular">support@qlresoureces.com.au</a>
+                                    <a href="mailto:support@qlresources.com.au" className="nav-link font-16 font-regular">support@qlresources.com.au</a>
                                   </div>
                               </div>
                             </ListGroup.Item>
