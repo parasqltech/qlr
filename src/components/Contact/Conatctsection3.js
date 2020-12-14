@@ -61,6 +61,7 @@ class Contactsection3 extends Component {
     }
     submitForm() {
       if (this.validator.allValid()) {
+        alert('if');
         this.setState({success: "d-block"});
         setTimeout(
             function() {
@@ -73,6 +74,8 @@ class Contactsection3 extends Component {
         
         
       } else {
+        alert('else');
+        event.preventDefault()
         this.setState({success: "d-none"});
         this.validator.showMessages();
         this.forceUpdate();
