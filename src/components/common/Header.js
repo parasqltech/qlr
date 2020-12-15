@@ -104,22 +104,31 @@ return (
                                     return (
                                     <>
 
-                                        {data &&
-                                        data.allWordpressWpApiMenusMenusItems &&
-                                        data.allWordpressWpApiMenusMenusItems.edges &&
-                                        data.allWordpressWpApiMenusMenusItems.edges[0] &&
-                                        data.allWordpressWpApiMenusMenusItems.edges[0].node &&
-                                        data.allWordpressWpApiMenusMenusItems.edges[0].node.items &&
-                                        data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
-                                        (prop,i) => {
-                                            return (
-                                            <ListGroup.Item as="li" className="font-16 font-semibold">
-                                                <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
-                                            </ListGroup.Item>
+                                    {data &&
+                                    data.allWordpressWpApiMenusMenusItems &&
+                                    data.allWordpressWpApiMenusMenusItems.edges &&
+                                    data.allWordpressWpApiMenusMenusItems.edges[0] &&
+                                    data.allWordpressWpApiMenusMenusItems.edges[0].node &&
+                                    data.allWordpressWpApiMenusMenusItems.edges[0].node.items &&
+                                    data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
+                                    (prop,i) => {
+                                    return (
+                                    <>
+                                    {(prop.url.indexOf("service")!= -1) ? (
+                                    <ListGroup.Item as="li" className="font-16 font-semibold">
+                                    <Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
+                                    </ListGroup.Item>
+                                    ) : (
+                                    <ListGroup.Item as="li" className="font-16 font-semibold">
+                                    <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
+                                    </ListGroup.Item>
 
-                                            )
-                                            }
-                                        )}
+                                    )}
+                                    </>
+
+
+
+                                    )})}
                                     </>
                                     )
                                 }}

@@ -70,7 +70,7 @@ class Footer extends Component {
                                   </div>    
                                   <div className="footer-arrow-data last">
                                     {/* <Link to="" className="nav-link p-0"> 45 St Georges Terrace,Ground Floor, Perth, 6000</Link> */}
-                                    <a href="#" className="nav-link p-0"><FooterAddress/></a>
+                                    <FooterAddress/>
                                   </div>
                               </div>
                             </ListGroup.Item>
@@ -80,7 +80,7 @@ class Footer extends Component {
                                      <Image src={footermail} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    <a href="mailto:support@qlresources.com.au" className="nav-link font-16 font-regular">support@qlresources.com.au</a>
+                                    <FooterEmail/>
                                   </div>
                               </div>
                             </ListGroup.Item>
@@ -90,7 +90,7 @@ class Footer extends Component {
                                      <Image src={footercall} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
-                                    <a href="tel:+61433312776" className="nav-link font-16 font-regular">+61 433 312 776</a>
+                                    <FooterMobile/>
                                   </div>
                               </div>
                             </ListGroup.Item>

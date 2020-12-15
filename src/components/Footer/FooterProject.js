@@ -37,7 +37,19 @@ export default () => (
               data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                 prop => {
                   return (
-                    
+                  <>
+          {(prop.url.indexOf("project")!= -1) ? (  
+          <ListGroup.Item as="li" className="font-16 font-regular">
+            <div className="d-flex">    
+                <div className="footer-arrow-image mr-2">
+                   <Image src={arrowleft} className="img-fluid "/>
+                </div>    
+                <div className="footer-arrow-data">
+                  <Link to={"/projects/"+prop.object_slug} className="nav-link p-0"> {prop.title}</Link>
+                </div>
+            </div>
+          </ListGroup.Item> 
+          ) :(   
 					<ListGroup.Item as="li" className="font-16 font-regular">
                               <div className="d-flex">    
                                   <div className="footer-arrow-image mr-2">
@@ -48,6 +60,8 @@ export default () => (
                                   </div>
                               </div>
           </ListGroup.Item>
+          )}
+          </>
                   )
                 }
               )}
