@@ -5,6 +5,7 @@ import Homesection1 from '../components/Home/Homesection1'
 import Homesection2 from '../components/Home/Homesection2'
 import Homesection3 from '../components/Home/Homesection3'
 import Homesection4 from '../components/Home/Homesection4'
+import Homesection8 from '../components/Home/Homesection8'
 // import Homesection5 from '../components/Home/Homesection5'
 // import Homesection6 from '../components/Home/Homesection6'
 // import Homesection7 from '../components/Home/Homesection7'
@@ -20,6 +21,7 @@ class MainPage extends Component {
                     <Homesection2/>
                     <Homesection3/>
                     <Homesection4/>
+                    <Homesection8/>
                     {/* <Homesection5/> */}
                     {/* <Homesection6/> */}
                     {/* <Homesection7/> */}
