@@ -93,7 +93,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.fname} onChange={this.fname} Name='firstName' className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
+                                        <input type="text" autocomplete="off" value={this.state.fname} onChange={this.fname} Name='firstName' className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -106,7 +106,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.lname} onChange={this.lname} Name='lastName' className="form-control main font-18 font-regular color-666" placeholder="Last Name" /> 
+                                        <input type="text" autocomplete="off" value={this.state.lname} onChange={this.lname} Name='lastName' className="form-control main font-18 font-regular color-666" placeholder="Last Name" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -119,7 +119,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.mobile} onChange={this.mobile} Name='mobile' className="form-control main font-18 font-regular color-666" placeholder="Mobile Number" /> 
+                                        <input type="text" autocomplete="off" value={this.state.mobile} onChange={this.mobile} Name='mobile' className="form-control main font-18 font-regular color-666" placeholder="Mobile Number" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formcall} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
@@ -133,7 +133,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" value={this.state.email} onChange={this.email} Name='email' className="form-control main font-18 font-regular color-666" placeholder="Email" />        
+                                        <input type="text" autocomplete="off" value={this.state.email} onChange={this.email} Name='email' className="form-control main font-18 font-regular color-666" placeholder="Email" />        
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formmail} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
