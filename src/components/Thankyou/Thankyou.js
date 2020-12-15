@@ -8,15 +8,6 @@ class Thankyou extends Component {
     render() {
         return (
             <>
-             {/* <div className="main-padding-header">
-                <section className="banner-section">
-                    <Container>
-                    <div className="text-white text-center">
-                        <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">Thank you</h2>
-                    </div>
-                </Container>
-                </section>
-            </div> */}
             <section className="thankyou-section-2 justify-content-center text-center">
                 <Container>
                   
