@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { Container,Row,Col } from 'react-bootstrap';
 import { Link ,StaticQuery, graphql } from "gatsby";
+import Footer from '../components/common/Footer'
 
 const NotFoundPage = () => (
   <Layout>
@@ -19,6 +20,8 @@ const NotFoundPage = () => (
         </Row>
       </Container>
     </section>
+    
+     <Footer/>
   </Layout>
 )
 

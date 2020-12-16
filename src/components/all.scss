@@ -255,7 +255,7 @@ header .social-header {
     {
       color: #fff;
       font-size: 18px;
-      padding:10px !important;
+      padding:8px 10px !important;
     }
   }
   .second-li
@@ -272,7 +272,7 @@ header .social-header {
       .nav-link:hover
       {
         color: #fff !important;
-        padding:10px !important;
+        padding:8px 10px !important;
         svg
         {
           margin-right: 8px;
@@ -293,7 +293,7 @@ header .social-header {
 header .sub-header
 {
   background-color: #fff;
-  padding: 20px 0px;
+  padding: 18px 0px;
   .navbar
   {
     display: flex;
@@ -327,7 +327,6 @@ header .sub-header
     .nav-link
     {
       padding: 0px 0px;
-      text-transform: uppercase;
       white-space: pre;
       color: #333333 !important;
     }
