@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container,Image } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Banner from '../../images/banner-1-3.jpg'
+import Banner from '../../images/diagram-banner.jpg'
 class HomeSection8 extends Component {
      
     render() {
