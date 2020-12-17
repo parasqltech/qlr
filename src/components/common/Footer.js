@@ -28,19 +28,6 @@ class Footer extends Component {
                       </Link>
 
                         <FooterParagraph/>
-                        <p className="font-16 font-regular mb-2">Contact with us :</p>
-                          <ListGroup as="ul" horizontal className="align-items-center">
-                            <ListGroup.Item as="li" className="font-16 font-regular">
-                            <Link className="nav-link p-0" target="_blank" to="http://linkedin.com/company/qlresources">
-                                <FaLinkedinIn/>
-                            </Link>
-                            </ListGroup.Item>
-                            <ListGroup.Item as="li" className="font-16 font-regular">
-                              <Link className="nav-link p-0" target="_blank" to="https://twitter.com/QlResources">
-                                <FaTwitter/>
-                              </Link>
-                            </ListGroup.Item>
-                          </ListGroup>
                       </div>
                     </Col>
                     <Col xl={3} lg={3} md={6} sm={6} className="lg-mb-4">
@@ -61,7 +48,15 @@ class Footer extends Component {
                     </Col>
                     <Col xl={3} lg={12} md={12} sm={12} className="">
                       <div className="footer-data social-li-pad">
-                        <h3 className="font-bold font-18 mb-4">Contact Us</h3>
+                        <div className="d-lg-block d-none mb-4">
+                          <Link to="/contact#contact3" className="font-bold font-18 color-303030">Contact Us</Link>
+                        </div>
+                        <div className="d-none d-sm-block d-lg-none mb-4">
+                          <Link to="/contact#contactnew3" className="font-bold font-18 color-303030">Contact Us</Link>
+                        </div>
+                        <div className="d-block d-sm-none mb-4">
+                          <Link to="/contact#contactnewnew3" className="font-bold font-18 color-303030">Contact Us</Link>
+                        </div>
                         <ListGroup as="ul">
                             <ListGroup.Item as="li" className="font-16 font-regular">
                               <div className="d-flex">    
@@ -95,6 +90,20 @@ class Footer extends Component {
                               </div>
                             </ListGroup.Item>
                         </ListGroup>
+                        {/*  */}
+                        
+                          <ListGroup as="ul" horizontal className="social-icons align-items-center">
+                            <ListGroup.Item as="li" className="font-16 font-regular">
+                            <Link className="nav-link p-0" target="_blank" to="http://linkedin.com/company/qlresources">
+                                <FaLinkedinIn/>
+                            </Link>
+                            </ListGroup.Item>
+                            <ListGroup.Item as="li" className="font-16 font-regular">
+                              <Link className="nav-link p-0" target="_blank" to="https://twitter.com/QlResources">
+                                <FaTwitter/>
+                              </Link>
+                            </ListGroup.Item>
+                          </ListGroup>
                       </div>
                     </Col>
                   </Row>

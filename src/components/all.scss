@@ -349,6 +349,10 @@ section.home-section-1 .slick-slide
   overflow: hidden;
   width: 100%;
 }
+section.home-section-1 .slick-slide:nth-child(4) .button.white
+{
+  display: none !important;
+}
 section.home-section-1 .slick-slider
 {
   overflow: hidden;
@@ -369,6 +373,7 @@ section.home-section-1 .slider-inner-data
   top: 100px;
   padding: 0px 0px;
   width: 100% !important;
+  z-index: 10;
 }
 section.home-section-1 .slider-inner-data h2
 {
@@ -638,7 +643,7 @@ footer .footer-data ul li .nav-link{
 }
 footer .footer-data-inner p{
   color: $color666 !important;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 footer .footer-data ul li .footer-arrow-image{
   width: 10px;
@@ -671,6 +676,27 @@ footer .footer-data-inner ul li a:hover{
   height: 27px;
   width: 27px;
   text-align: center;
+}
+footer ul.social-icons
+{
+  margin-top: 20px !important;
+}
+footer ul.social-icons li a.nav-link,
+footer ul.social-icons li a.nav-link:hover{ 
+  color: #fff !important;
+  background-color: #23A5DD;
+  display: block;
+  height: 27px;
+  width: 27px;
+  text-align: center;
+}
+footer ul.social-icons li{
+  padding: 0px 15px 0px 0px;
+  border: 0;
+  margin-bottom: 0 !important;
+  background: transparent;
+  align-items: center;
+  color: $color666 !important;
 }
 .sub-footer
 {
@@ -1896,7 +1922,7 @@ button.white, .button.white{padding: 8px 15px !important;}
   .small-justify-center{justify-content: center !important;}
   // header .social-header .first-li li{margin-right: 15px !important;}
   header .social-header .first-li li a{font-size: 16px !important;padding: 10px 8px !important;}
-  footer .footer-data-inner p {margin-bottom: 20px !important;}
+  footer .footer-data-inner p {margin-bottom: 0px !important;}
   .d-small-block{display: block !important;}
   .blog-details-data .card .date{right: 15px !important;}
   footer{padding: 25px 0px 25px !important;}
