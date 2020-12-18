@@ -28,7 +28,7 @@ export default () => (
         prop => {
           return (
             <div className="text-white text-center">
-                <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">{prop.node.acf.title1}</h2>
+                <h2 className="font-40 font-uppercase font-bold mb-0">{prop.node.acf.title1}</h2>
             </div>
             )
           }

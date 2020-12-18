@@ -2250,3 +2250,8 @@ section.error-section span {
     font-size: 14px;
   }
 }
+header .navbar-nav .nav-link.is-active,
+header .navbar-nav .nav-link[aria-current="page"]
+{
+  color: #23A5DD !important;
+}

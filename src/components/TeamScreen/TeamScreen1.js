@@ -30,7 +30,7 @@ export default () => (
           return (
             
             <div className="text-white text-center">
-              <h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">{prop.node.acf.title1}</h2>
+              <h2 className="font-40 font-uppercase font-bold mb-0">{prop.node.acf.title1}</h2>
               <Breadcrumb>
                   <Breadcrumb.Item className="font-18  font-bold ">
                       <Link className="nav-link p-0" to="/">{prop.node.acf.title2}</Link>

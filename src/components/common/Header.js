@@ -23,7 +23,7 @@ class Header extends Component {
             }
         });
     }
-    
+        
 
 render() {
 
@@ -114,20 +114,17 @@ return (
                                     (prop,i) => {
                                     return (
                                     <>
-                                    {(prop.url.indexOf("service")!= -1) ? (
-                                    <ListGroup.Item as="li" className="font-16 font-semibold">
-                                    <Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
-                                    </ListGroup.Item>
-                                    ) : (
-                                    <ListGroup.Item as="li" className="font-16 font-semibold">
-                                    <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
-                                    </ListGroup.Item>
+                                        {(prop.url.indexOf("service")!= -1) ? (
+                                            <ListGroup.Item as="li" className="font-16 font-semibold">
+                                                <Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
+                                            </ListGroup.Item>
+                                        ) : (
+                                            <ListGroup.Item as="li" className="font-16 font-semibold">
+                                                <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
+                                            </ListGroup.Item>
 
-                                    )}
+                                        )}
                                     </>
-
-
-
                                     )})}
                                     </>
                                     )

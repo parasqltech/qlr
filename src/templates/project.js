@@ -23,7 +23,7 @@ return (
 <section className="banner-section">
     <Container>
         <div className="text-white text-center">
-			<h2 className="font-40 font-uppercase font-bold mb-4 xs-mb-1">{page.edges[0].node.title}</h2>
+			<h2 className="font-40 font-uppercase font-bold mb-0">{page.edges[0].node.title}</h2>
 		</div>
     </Container>
 </section>
