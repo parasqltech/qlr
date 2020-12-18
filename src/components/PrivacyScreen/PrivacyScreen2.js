@@ -35,7 +35,7 @@ export default () => (
            <Container>
             <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content}} className="" />
 
-            <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content2}} className="" />
+            {/* <div dangerouslySetInnerHTML={{ __html: prop.node.acf.content2}} className="" /> */}
           </Container>
           )
           }
