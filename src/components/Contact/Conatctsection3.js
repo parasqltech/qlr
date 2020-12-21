@@ -70,7 +70,8 @@ class Contactsection3 extends Component {
         .bind(this),
             2000
         );
-        this.setState({IsSubmit: true});  
+        this.setState({IsSubmit: true});
+        this.clearData();  
         // window.location = '/thankyou';
         // //post code
         // // axios.post('https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec', {
@@ -169,7 +170,7 @@ class Contactsection3 extends Component {
                                 </Form.Group>
                             </Col>
                             <Col xl={12} lg={12} md={12} className="justify-content-center d-flex">
-                                <Button variant="" type="button" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
+                                <Button variant="" type="submit" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
                                     Send <FaAngleRight className="ml-1"/>
                                 </Button>
                             </Col>
