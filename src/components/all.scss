@@ -751,7 +751,7 @@ padding: 0px 0px !important;
   section.contact-section-3 form .input-group-text img{height: 20px !important;}
   section.home-section-1 .slider-inner-data h2{font-size: 50px;line-height: 60px;}
   // header
-  header .sub-header .navbar .nav-link {padding: 10px 15px !important;width: 100%;text-align: left;text-transform: uppercase !important;}
+  header .sub-header .navbar .nav-link {padding: 8px 15px !important;width: 100%;text-align: left;}
   header .sub-header{-webkit-box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important;box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 1) !important; }
   header .sub-header ul li{padding: 0px 0px !important;}
   header .sub-header .navbar li:last-child {padding: 5px 0px 5px 0px !important;}
@@ -886,7 +886,7 @@ padding: 0px 0px !important;
   .tagsList .form-check-label{padding: 0px 8px !important;}
   .blog-details-data .card .date {width: 55px !important;height: 68px !important;}
   .blog-details-data .card .card-body {padding: 15px 15px !important;}
-  header .sub-header {padding: 8px 0px !important;}
+  header .sub-header {padding: 10px 0px !important;}
   // .main-padding-header {padding-top: 103px !important;}
   .banner-section {min-height: 180px !important;}
   // section.home-section-1 .slick-slide img{max-height: 350px !important;min-height: 310px !important;}
@@ -1928,13 +1928,22 @@ button.white, .button.white{padding: 8px 15px !important;}
   .d-small-block{display: block !important;}
   .blog-details-data .card .date{right: 15px !important;}
   footer{padding: 25px 0px 25px !important;}
+  header .sub-header .navbar .navbar-brand img.header-logo { width: 140px;}
 }
 @media all and (max-width:450px)
 {
-  section.home-section-1 .slider-inner-data{top: 10px !important;}
+  section.home-section-1 .slider-inner-data{top: 30px !important;}
   section.home-section-1 .slider-inner-data h2 {font-size: 20px !important;line-height: 28px !important;margin-bottom: 10px !important;}
   section.home-section-1 .slider-inner-data h3 {font-size: 14px !important;line-height: 22px !important;margin-bottom: 10px !important;}
   section.home-section-1 .button.white, section.home-section-1 button.white { padding: 2px 10px !important;font-size: 12px !important;}
+}
+@media all and (max-width:400px)
+{
+  section.home-section-1 .slider-inner-data{top: 20px !important;}
+}
+@media all and (max-width:360px)
+{
+  section.home-section-1 .slider-inner-data{top: 10px !important;}
 }
 
 
