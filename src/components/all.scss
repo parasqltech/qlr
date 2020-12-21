@@ -290,6 +290,9 @@ header .social-header {
     }
   }
 }
+header .second-li li:last-child .nav-link,
+header .second-li li:last-child .nav-link:hover{padding-right: 0 !important;}
+
 header .sub-header
 {
   background-color: #fff;
