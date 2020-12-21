@@ -5,8 +5,6 @@ import { FaAngleRight } from 'react-icons/fa'
 import formname from '../../images/form-name.png'
 import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
-import thmeimage from '../../images/theme-image.png'
-import blog1 from '../../images/theme-blog-1.png'
 import SimpleReactValidator from 'simple-react-validator';
 
 class Themeform extends Component {

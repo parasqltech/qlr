@@ -5,8 +5,6 @@ import Layout from '../../components/Layout'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import slider1 from '../../images/slider-1.png'
-import slider2 from '../../images/mobile-slider.jpg'
 import HomeScreen1 from '../HomeScreen/HomeScreen1'
 
 function SampleNextArrow(props) {
