@@ -70,24 +70,24 @@ class Contactsection3 extends Component {
         .bind(this),
             2000
         );
-        this.setState({IsSubmit: true});
-        this.clearData();  
         // window.location = '/thankyou';
-        // //post code
-        // // axios.post('https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec', {
-        // //     fname: 'Fred',
-        // //     lname: 'Flintstone',
-        // //              mobile: 'Flintstone',
-        // //                       email: 'Flintstone',
-        // //                                message: 'Flintstone'
+        this.setState({IsSubmit: true});
+          
+        //post code
+        // axios.post('https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec', {
+        //     fname: 'Fred',
+        //     lname: 'Flintstone',
+        //              mobile: 'Flintstone',
+        //                       email: 'Flintstone',
+        //                                message: 'Flintstone'
            
-        // //   })
-        // //   .then(function (response) {
-        // //     console.log(response);
-        // //   })
-        // //   .catch(function (error) {
-        // //     console.log(error);
-        // //   });
+        //   })
+        //   .then(function (response) {
+        //     console.log(response);
+        //   })
+        //   .catch(function (error) {
+        //     console.log(error);
+        //   });
         
       } else {
         event.preventDefault()
