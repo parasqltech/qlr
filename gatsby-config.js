@@ -27,6 +27,19 @@ module.exports = {
         },
       },
     },
+    {
+    resolve: 'gatsby-plugin-htaccess',
+    options: {
+        custom: `
+            <IfModule mod_expires.c>
+        RewriteCond %{HTTPS} off [OR]
+        RewriteCond %{HTTP_HOST} !^www\. [NC]
+        RewriteCond %{HTTP_HOST} ^(.*)$  [NC]
+        RewriteRule (.*) https://www.%1/$1 [R=301,L]
+      </IfModule>
+        `,
+    },
+  },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

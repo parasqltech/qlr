@@ -70,9 +70,9 @@ class Contactsection3 extends Component {
         .bind(this),
             2000
         );
-        // window.location = '/thankyou';
         this.setState({IsSubmit: true});
           
+        // window.location = '/thankyou';
         //post code
         // axios.post('https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec', {
         //     fname: 'Fred',
