@@ -76,7 +76,7 @@ export default () => (
                   <Image src={prop.node.acf.slider2image.source_url} className="img-fluid d-sm-none d-inline" />
                   <div className="slider-inner-data">
                   <Container>
-                    <Row>
+                    <Row className="just-end">
                     <Col xl={8} lg={12} md={12}>
                       <h2 className="text-white font-bold">{prop.node.acf.title2}</h2>
                       <h3 className="font-bold color-abf">{prop.node.acf.title3}<br></br>{prop.node.acf.title4}</h3>
