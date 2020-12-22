@@ -479,6 +479,7 @@ img:focus{
   justify-content: center;
   display: flex;
 }
+.home-section-2 .slider-data img{height: initial !important;}
 
 
 // Title 
@@ -1925,14 +1926,13 @@ button.white, .button.white{padding: 8px 15px !important;}
   section.service-section-4.about-section-3 {padding: 30px 0px 10px 0px !important;}
   .medium-justify-center{justify-content: center !important;}
   section.home-section-1 .slick-dots{display: none !important;}
-  .home-section-4 {
-    padding: 15px 0 0px 0px!important;
-  }
+  .home-section-4 {padding: 15px 0 0px 0px!important;}
   footer{padding: 30px 0px !important;}
   section.contact-section-2{padding: 30px 0px 10px !important;}
   section.home-section-1 .button.white,
-  section.home-section-1 button.white
-  {padding: 5px 10px !important;font-size: 13px !important;}
+  section.home-section-1 button.white{padding: 5px 10px !important;font-size: 13px !important;}
+  .home-section-2 .slider-data{ padding: 0px 10px !important;}
+
 }
 @media all and (max-width:575px)
 {
