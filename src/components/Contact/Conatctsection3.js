@@ -106,7 +106,7 @@ class Contactsection3 extends Component {
                     <div className="title">
                     <ContactScreenTitle3/>    
                     </div>
-                    <Form className='gform' method="POST" action="https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec">
+                    <Form className='gform' method="POST" action="https://script.google.com/a/qlresources.com.au/macros/s/AKfycbze4PhRYXlNHa-1yK4axNJarLrvp78ywvTdiDDF2g/exec">
                         <Row className="mt-4">
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
