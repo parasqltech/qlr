@@ -79,9 +79,9 @@ return (
 						<div className="overlay"></div>
 						<nav className="menu" id="menu">
 							<div className="menu-mobile-header">
-								<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
+								<button type="button" className="menu-mobile-arrow"><FaAngleLeft/></button>
 								<div className="menu-mobile-title"></div>
-								<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
+								<button type="button" className="menu-mobile-close"><FaTimes/></button>
 							</div>
 							<ul className="menu-section">
 								 <StaticQuery
@@ -208,6 +208,12 @@ return (
                                 />
 							</ul>
 						</nav>
+<button type="button" className="menu-mobile-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					</div>
                     
                 </Navbar>
