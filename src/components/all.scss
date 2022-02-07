@@ -30,6 +30,14 @@
   font-weight: 700;
   font-style: normal;
 }
+.header-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 17%;
+          flex: 0 0 17%;
+}
 .brand img{
   width:150px;
 }
