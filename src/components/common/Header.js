@@ -79,9 +79,9 @@ return (
 						<div className="overlay"></div>
 						<nav className="menu" id="menu">
 							<div className="menu-mobile-header">
-								<button type="button" className="menu-mobile-arrow"><FaAngleLeft/></button>
+								<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
 								<div className="menu-mobile-title"></div>
-								<button type="button" className="menu-mobile-close"><FaTimes/></button>
+								<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
 							</div>
 							<ul className="menu-section">
 								 <StaticQuery
@@ -138,8 +138,36 @@ return (
 												<div className="menu-subs menu-mega menu-column-4">
 													{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
 														return (
+														<>
+														{(child.title == "Mining Engineering") ? (
+															<div class="list-item">
+																<h4 class="title">Mine Engineering</h4>
+																<ul>
+																	<li><a href="#">Short Term Planing </a></li>
+																	<li><a href="#">Medium and Long Trem Planning</a></li>
+																	<li><a href="#">Product List</a></li>
+																	<li><a href="#">Management Plans</a></li>
+																</ul>
+															</div>
+														) : ("")}
+														{(child.title == "Digital Transformation") ? (
 														<div className="list-item">
-															<h4 className="title">{child.title}</h4>
+															<h4 className="title">Digital Transformation</h4>
+															<ul>
+																<li><a href="#">Mine Planning</a></li>
+																<li><a href="#">Asset Management</a></li>
+																<li><a href="#">Mine Monitoring & Dispatch</a></li>
+																<li><a href="#">SCADA Systems Data</a></li>
+																<li><a href="#">GIS: Data Visualisation </a></li>
+																<li><a href="#">Paperless Inspections </a></li>
+															</ul>
+															
+														
+														</div>
+														) : ("")}
+														{(child.title == "Geology and Resources") ? (
+														<div class="list-item">
+															<h4 class="title">Geology And Resources</h4>
 															<ul>
 																<li><a href="#">Mineral Resource Estimation</a></li>
 																<li><a href="#">Data Management (Mining and Exploration)</a></li>
@@ -148,8 +176,14 @@ return (
 																<li><a href="#">Geological Risk assessment</a></li>
 																<li><a href="#">Resource Recovery</a></li>
 																<li><a href="#">JORC Code Compliance Reporting</a></li>
+
 															</ul>
+															
 														</div>
+														) : ("")}
+														</>
+														
+														
 													)})}
 												<div className="list-item">
 													<img src={Mining} />
@@ -208,12 +242,6 @@ return (
                                 />
 							</ul>
 						</nav>
-<button type="button" className="menu-mobile-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
 					</div>
                     
                 </Navbar>
