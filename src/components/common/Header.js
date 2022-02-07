@@ -133,7 +133,7 @@ return (
 									
 									{(prop.wordpress_children) ? 
 									(
-										 <NavDropdown title={prop.title} id="navbarScrollingDropdown">
+										 <NavDropdown className="font-16 font-semibold"  title={prop.title} id="navbarScrollingDropdown">
 											{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
 												return (
 													<>
