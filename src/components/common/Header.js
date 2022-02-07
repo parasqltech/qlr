@@ -1,6 +1,6 @@
 import React, { Component,useState } from 'react';
 import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdown } from 'react-bootstrap'
-import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
+import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope,FaTimes,FaAngleLeft,FaBars } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../images/QLRlogo.svg'
 import Mining from '../../images/Home-Mining-1.jpg'
@@ -75,18 +75,16 @@ return (
                             <Image src={logo} className="img-fluid header-logo" />
                         </Link>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ml-auto">
-                          
-				<div className="menu-mobile-header">
-					<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
-					<div class="menu-mobile-title"></div>
-					<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
-				</div>			
-				<ul className="menu-section">
-                              
-                            <StaticQuery
+					<div className="header-item-center">
+						<div className="overlay"></div>
+						<nav className="menu" id="menu">
+							<div className="menu-mobile-header">
+								<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
+								<div className="menu-mobile-title"></div>
+								<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
+							</div>
+							<ul className="menu-section">
+								 <StaticQuery
                                 query={graphql`
                                     query {
                                     allWordpressWpApiMenusMenusItems(
@@ -153,7 +151,7 @@ return (
 															</ul>
 														</div>
 													)})}
-				    <div class="list-item">
+												<div className="list-item">
 													<img src={Mining} />
 												</div>
 												</div>
@@ -209,15 +207,9 @@ return (
                                 }}
                                 />
 							</ul>
-                           
-<button type="button" className="menu-mobile-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>                        
-</Nav>
-                    </Navbar.Collapse>
+						</nav>
+					</div>
+                    
                 </Navbar>
             </Container>
         </div>
