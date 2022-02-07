@@ -79,7 +79,15 @@ return (
                         <Nav className="ml-auto">
                           
                             <ListGroup as="ul" horizontal>
-                              
+                              <Nav.Link href="#action1">Home</Nav.Link>
+                            <NavDropdown title="Link" id="navbarScrollingDropdown">
+                              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                              <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                              <NavDropdown.Divider />
+                              <NavDropdown.Item href="#action5">
+                                Something else here
+                              </NavDropdown.Item>
+                            </NavDropdown>
                             <StaticQuery
                                 query={graphql`
                                     query {
@@ -130,9 +138,11 @@ return (
 												return (
 													<>
 														{(child.url.indexOf("service")!= -1) ? (
-														<NavDropdown.Item to={"/services/"+child.object_slug} >{child.title}</NavDropdown.Item>
+														
+														<Link to="/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link>
 													) : (
-															<NavDropdown.Item to={"/"+child.url.toLowerCase().replace("http://", '')} >{child.title}</NavDropdown.Item>
+															
+															<Link to={"/"+child.url.toLowerCase().replace("http://", '')}  className="dropdown-item" role="button">{child.title}</Link>
 													)}
 													</>
 												)
