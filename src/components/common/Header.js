@@ -71,7 +71,7 @@ return (
             <Container>
 				<section className="wrapper">	
                     <div className="header-item-left">
-					<a href="index.html" className="brand"><img src="https://www.qlresources.com.au/static/QLRlogo-be571d35457b531dd5c6f93883af4188.svg" ></a>
+					<a href="" className="brand"><img src="https://www.qlresources.com.au/static/QLRlogo-be571d35457b531dd5c6f93883af4188.svg" /></a>
 				</div>
 					<div className="header-item-center">
 						<div className="overlay"></div>
@@ -240,7 +240,7 @@ return (
                                 />
 							</ul>
 						</nav>
-<button type="button" class="menu-mobile-toggle">
+<button type="button" className="menu-mobile-toggle">
 						asasasasasasasasasasasasasasa
 					</button>
 					</div>
