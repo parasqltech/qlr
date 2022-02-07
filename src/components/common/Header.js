@@ -69,12 +69,10 @@ return (
         </div>
         <div className="sub-header">
             <Container>
-                <Navbar collapseOnSelect expand="xl" className="p-0">
-                    <Navbar.Brand>
-                        <Link className="nav-link p-0" to="/">
-                            <Image src={logo} className="img-fluid header-logo" />
-                        </Link>
-                    </Navbar.Brand>
+				<section className="wrapper">	
+                    <div className="header-item-left">
+					<a href="index.html" className="brand"><img src="https://www.qlresources.com.au/static/QLRlogo-be571d35457b531dd5c6f93883af4188.svg" ></a>
+				</div>
 					<div className="header-item-center">
 						<div className="overlay"></div>
 						<nav className="menu" id="menu">
@@ -246,8 +244,9 @@ return (
 						asasasasasasasasasasasasasasa
 					</button>
 					</div>
+					</section>
                     
-                </Navbar>
+               
             </Container>
         </div>
     </header>
