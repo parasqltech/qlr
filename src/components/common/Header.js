@@ -30,7 +30,7 @@ render() {
 
 return (
     <>
-    <header className={this.state.isTop ? '' : 'sticky'} >
+    <header className={this.state.isTop ? 'header' : 'sticky header'} >
         <div className="social-header">
             <Container>
                 <div className="d-md-block d-none">
