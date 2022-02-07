@@ -4,6 +4,7 @@ import {withPrefix} from "gatsby"
 import Header from '../components/common/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './all.scss'
+import './style.css'
 import favicon from '../images/favicon.png';
 
 
