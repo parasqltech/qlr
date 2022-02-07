@@ -79,7 +79,12 @@ return (
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
                           
-							<ul className="menu-section">
+				<div className="menu-mobile-header">
+					<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
+					<div class="menu-mobile-title"></div>
+					<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
+				</div>			
+				<ul className="menu-section">
                               
                             <StaticQuery
                                 query={graphql`
