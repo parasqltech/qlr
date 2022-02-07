@@ -3,6 +3,7 @@ import { ListGroup,Navbar,Nav,Form,FormControl,Button, Container,Image,NavDropdo
 import { FaTwitter,FaLinkedinIn,FaPhoneAlt,FaEnvelope } from 'react-icons/fa'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../images/QLRlogo.svg'
+import Mining from '../../images/Home-Mining-1.jpg'
 import HeaderSocialTwitter from '../Menu/HeaderSocialTwitter'
 import HeaderSocialLinked from '../Menu/HeaderSocialLinkedIn'
 import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
@@ -127,24 +128,55 @@ return (
 									(
 										<li className="menu-item-has-children">
 											<a href="#">{prop.title} <i className="ion ion-ios-arrow-down"></i></a>
-											<div className="menu-subs menu-column-1">
-												<ul>
-														
+											
+											{(prop.title == 'Services') ? 
+											(
+												<>
+												<div className="menu-subs menu-mega menu-column-4">
 													{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
-												return (
-													<>
-														{(child.url.indexOf("service")!= -1) ? (
-														
-														<li><Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link></li>
-													) : (
+														return (
+														<div className="list-item">
+															<h4 className="title">{child.title}</h4>
+															<ul>
+																<li><a href="#">Mineral Resource Estimation</a></li>
+																<li><a href="#">Data Management (Mining and Exploration)</a></li>
+																<li><a href="#">Mineral Statistical Analusis</a></li>
+																<li><a href="#">Pit Structural Mapping</a></li>
+																<li><a href="#">Geological Risk assessment</a></li>
+																<li><a href="#">Resource Recovery</a></li>
+																<li><a href="#">JORC Code Compliance Reporting</a></li>
+															</ul>
+														</div>
+													)})}
+												</div>
+												<div class="list-item">
+													<img src={Mining} />
+												</div>
+												</>
+											) 
+											: 
+											
+											(
+												<div className="menu-subs menu-column-1">
+													<ul>	
+													{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
+														return (
+														<>
+															{(child.url.indexOf("service")!= -1) ? (
 															
-															<li><Link to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link></li>
-													)}
-													</>
-												)
-											})}
-												</ul>
-											</div>
+															<li><Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link></li>
+														) : (
+																
+																<li><Link to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link></li>
+														)}
+														</>
+														)
+													})}
+													</ul>
+												</div>
+											)}
+											
+											
 										</li>
 									) : 
 									
