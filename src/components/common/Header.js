@@ -139,7 +139,7 @@ return (
 													<>
 														{(child.url.indexOf("service")!= -1) ? (
 														
-														<Link to="/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link>
+														<Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link>
 													) : (
 															
 															<Link to={"/"+child.url.toLowerCase().replace("http://", '')}  className="dropdown-item" role="button">{child.title}</Link>
