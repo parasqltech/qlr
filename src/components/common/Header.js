@@ -106,6 +106,7 @@ return (
                                                   wordpress_id
                                                   title
                                                   url
+												  object_slug
                                               }
                                         }
                                         }
@@ -129,16 +130,42 @@ return (
                                     (prop,i) => {
                                     return (
                                     <>
-                                        {(prop.url.indexOf("service")!= -1) ? (
-                                            <ListGroup.Item as="li" className="font-16 font-semibold">
-                                                <Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
-                                            </ListGroup.Item>
-                                        ) : (
-                                            <ListGroup.Item as="li" className="font-16 font-semibold">
-                                                <Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
-                                            </ListGroup.Item>
+									
+									{(prop.wordpress_children) ? 
+									(
+										 <NavDropdown title="Link" id="navbarScrollingDropdown">
+											{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
+												return (
+													<>
+														{(prop.url.indexOf("service")!= -1) ? (
+														<NavDropdown.Item to={"/services/"+child.object_slug} >{child.title}</NavDropdown.Item>
+													) : (
+															<NavDropdown.Item to={"/"+prop.url.toLowerCase().replace("http://", '')} >{prop.title}</NavDropdown.Item>
+													)}
+													</>
+												)
+											})}
+										</NavDropdown>
+									) : 
+									
+									(
+										<>
+											{(prop.url.indexOf("service")!= -1) ? (
+												<ListGroup.Item as="li" className="font-16 font-semibold">
+													<Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
+												</ListGroup.Item>
+											) : (
+												<ListGroup.Item as="li" className="font-16 font-semibold">
+													<Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
+												</ListGroup.Item>
 
-                                        )}
+											)}
+										</>
+									)}
+									
+									
+									
+                                       
                                     </>
                                     )})}
                                     </>
