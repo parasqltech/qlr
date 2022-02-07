@@ -77,6 +77,14 @@ return (
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
+                          <NavDropdown title="Link" id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action5">
+                              Something else here
+                            </NavDropdown.Item>
+                          </NavDropdown>
                             <ListGroup as="ul" horizontal>
                             <StaticQuery
                                 query={graphql`
@@ -92,6 +100,11 @@ return (
                                                 title
                                                 url
                                                 object_slug
+                                                wordpress_children {
+                                                  wordpress_id
+                                                  title
+                                                  url
+                                              }
                                         }
                                         }
                                     }
