@@ -148,10 +148,11 @@ return (
 															</ul>
 														</div>
 													)})}
-												</div>
-												<div class="list-item">
+				    <div class="list-item">
 													<img src={Mining} />
 												</div>
+												</div>
+												
 												</>
 											) 
 											: 
