@@ -134,7 +134,7 @@ return (
 														<Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link>
 													) : (
 															
-															<Link to={"/"+child.url.toLowerCase().replace("http://", '')}  className="dropdown-item" role="button">{child.title}</Link>
+															<Link to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link>
 													)}
 													</>
 												)
