@@ -78,7 +78,7 @@ return (
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
                           
-                            <ListGroup as="ul" horizontal>
+							<ul className="menu-section">
                               
                             <StaticQuery
                                 query={graphql`
@@ -125,34 +125,38 @@ return (
 									
 									{(prop.wordpress_children) ? 
 									(
-										 <NavDropdown className="font-16 font-semibold"  title={prop.title} id="navbarScrollingDropdown">
-											{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
+										<li className="menu-item-has-children">
+											<a href="#">{prop.title} <i className="ion ion-ios-arrow-down"></i></a>
+											<div className="menu-subs menu-column-1">
+												<ul>
+														
+													{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
 												return (
 													<>
 														{(child.url.indexOf("service")!= -1) ? (
 														
-														<Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link>
+														<li><Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link></li>
 													) : (
 															
-															<Link to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link>
+															<li><Link to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link></li>
 													)}
 													</>
 												)
 											})}
-										</NavDropdown>
+												</ul>
+											</div>
+										</li>
 									) : 
 									
 									(
 										<>
 											{(prop.url.indexOf("service")!= -1) ? (
-												<ListGroup.Item as="li" className="font-16 font-semibold">
+												<li className="menu-item">
 													<Link className="nav-link" to={"/services/"+prop.object_slug}>{prop.title}</Link>
-												</ListGroup.Item>
+												</li>
 											) : (
-												<ListGroup.Item as="li" className="font-16 font-semibold">
-													<Link className="nav-link" to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link>
-												</ListGroup.Item>
-
+												
+												<li className="menu-item"><Link to={"/"+prop.url.toLowerCase().replace("http://", '')}>{prop.title}</Link></li>
 											)}
 										</>
 									)}
@@ -166,8 +170,8 @@ return (
                                     )
                                 }}
                                 />
-
-                            </ListGroup>
+							</ul>
+                           
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
