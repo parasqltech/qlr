@@ -133,14 +133,14 @@ return (
 									
 									{(prop.wordpress_children) ? 
 									(
-										 <NavDropdown title="Link" id="navbarScrollingDropdown">
+										 <NavDropdown title={prop.title} id="navbarScrollingDropdown">
 											{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
 												return (
 													<>
-														{(prop.url.indexOf("service")!= -1) ? (
+														{(child.url.indexOf("service")!= -1) ? (
 														<NavDropdown.Item to={"/services/"+child.object_slug} >{child.title}</NavDropdown.Item>
 													) : (
-															<NavDropdown.Item to={"/"+prop.url.toLowerCase().replace("http://", '')} >{prop.title}</NavDropdown.Item>
+															<NavDropdown.Item to={"/"+child.url.toLowerCase().replace("http://", '')} >{child.title}</NavDropdown.Item>
 													)}
 													</>
 												)
