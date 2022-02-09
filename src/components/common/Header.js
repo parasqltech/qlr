@@ -28,7 +28,7 @@ class Header extends Component {
 		menuOverlay.classList.toggle('active');
 	}
 	showSubMenu(hasChildren) {
-		
+		let subMenu;  
 		subMenu = hasChildren.querySelector('.menu-subs');
 		subMenu.classList.add('active');
 		subMenu.style.animation = 'slideLeft 0.5s ease forwards';
