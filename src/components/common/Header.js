@@ -148,9 +148,9 @@ return (
 						<div className="overlay"></div>
 						<nav className="menu" id="menu">
 							<div className="menu-mobile-header">
-								<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
+								<button type="button" className="menu-mobile-arrow"><i className="ion-ios-arrow-back"></i></button>
 								<div className="menu-mobile-title"></div>
-								<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
+								<button type="button" className="menu-mobile-close"><i className="ion-android-close"></i></button>
 							</div>
 							<ul className="menu-section">
 								 <StaticQuery
