@@ -12,6 +12,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title="QL-Resources" link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]} />
       <Helmet>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
         
         {/* jquery */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
