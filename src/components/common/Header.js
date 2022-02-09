@@ -37,7 +37,7 @@ class Header extends Component {
 		menu.querySelector('.menu-mobile-header').classList.add('active');
 	}
 	 hideSubMenu() {
-		
+		let subMenu;  
 		subMenu.style.animation = 'slideRight 0.5s ease forwards';
 		setTimeout(() => {
 			subMenu.classList.remove('active');
