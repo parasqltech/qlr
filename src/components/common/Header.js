@@ -10,6 +10,13 @@ import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
 import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
 import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
 import HeaderSocialenvelopeIcon from '../Menu/HeaderSocialenvelopeIcon'
+const menu = document.querySelector('.menu');
+const menuSection = menu.querySelector('.menu-section');
+const menuArrow = menu.querySelector('.menu-mobile-arrow');
+const menuClosed = menu.querySelector('.menu-mobile-close');
+const menuToggle = document.querySelector('.menu-mobile-toggle');
+const menuOverlay = document.querySelector('.overlay');
+let subMenu;
 class Header extends Component {
   
     	constructor(props) {
@@ -19,13 +26,7 @@ class Header extends Component {
 		this.hideSubMenu = this.hideSubMenu.bind(this);
 	}
 	
-	const menu = document.querySelector('.menu');
-	const menuSection = menu.querySelector('.menu-section');
-	const menuArrow = menu.querySelector('.menu-mobile-arrow');
-	const menuClosed = menu.querySelector('.menu-mobile-close');
-	const menuToggle = document.querySelector('.menu-mobile-toggle');
-	const menuOverlay = document.querySelector('.overlay');
-	let subMenu;
+	
 	
 	toggleMenu(){
 		
