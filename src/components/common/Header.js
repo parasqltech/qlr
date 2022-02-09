@@ -37,12 +37,12 @@ class Header extends Component {
 		menu.querySelector('.menu-mobile-header').classList.add('active');
 	}
 	 hideSubMenu() {
-		let subMenu;  
-		subMenu.style.animation = 'slideRight 0.5s ease forwards';
-		setTimeout(() => {
-			subMenu.classList.remove('active');
-		}, 300);
+		var elems = document.querySelectorAll(".menu-subs");
 
+		[].forEach.call(elems, function(el) {
+		    el.classList.remove("active");
+		});
+		
 		menu.querySelector('.menu-mobile-title').innerHTML = '';
 		menu.querySelector('.menu-mobile-header').classList.remove('active');
 	}
