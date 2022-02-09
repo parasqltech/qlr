@@ -18,15 +18,22 @@ class Header extends Component {
 		this.showSubMenu = this.showSubMenu.bind(this);
 		this.hideSubMenu = this.hideSubMenu.bind(this);
 	}
+	
+	const menu = document.querySelector('.menu');
+	const menuSection = menu.querySelector('.menu-section');
+	const menuArrow = menu.querySelector('.menu-mobile-arrow');
+	const menuClosed = menu.querySelector('.menu-mobile-close');
+	const menuToggle = document.querySelector('.menu-mobile-toggle');
+	const menuOverlay = document.querySelector('.overlay');
+	let subMenu;
+	
 	toggleMenu(){
-		const menu = document.querySelector('.menu');
-		const menuOverlay = document.querySelector('.overlay');
+		
 		menu.classList.toggle('active');
 		menuOverlay.classList.toggle('active');
 	}
 	showSubMenu(hasChildren) {
-		let subMenu;
-		const menu = document.querySelector('.menu');
+		
 		subMenu = hasChildren.querySelector('.menu-subs');
 		subMenu.classList.add('active');
 		subMenu.style.animation = 'slideLeft 0.5s ease forwards';
@@ -35,8 +42,7 @@ class Header extends Component {
 		menu.querySelector('.menu-mobile-header').classList.add('active');
 	}
 	 hideSubMenu() {
-		let subMenu;
-		const menu = document.querySelector('.menu');
+		
 		subMenu.style.animation = 'slideRight 0.5s ease forwards';
 		setTimeout(() => {
 			subMenu.classList.remove('active');
@@ -58,18 +64,13 @@ class Header extends Component {
         });
 	document.addEventListener('resize', () => { 
 	if (window.innerWidth > 991) {
-		const menu = document.querySelector('.menu');
+		
 		if (menu.classList.contains('active')) {
 			this.toggleMenu();
 		}
 	}
 	});	
-	 const menu = document.querySelector('.menu');
-	const menuSection = menu.querySelector('.menu-section');
-	const menuArrow = menu.querySelector('.menu-mobile-arrow');
-	const menuClosed = menu.querySelector('.menu-mobile-close');
-	const menuToggle = document.querySelector('.menu-mobile-toggle');
-	const menuOverlay = document.querySelector('.overlay');   
+	 
 	menuSection.addEventListener('click', (e) => {
 		if (!menu.classList.contains('active')) {
 			return;
