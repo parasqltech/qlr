@@ -145,7 +145,7 @@ return (
             <Container>
 				<section className="wrapper">	
                     <div className="header-item-left">
-					<a href="" className="brand"><img src="https://www.qlresources.com.au/static/QLRlogo-be571d35457b531dd5c6f93883af4188.svg" /></a>
+					<Link to={"/"} className="brand"><img src={logo} /></Link>
 				</div>
 					<div className="header-item-center">
 						<div className="overlay"></div>
