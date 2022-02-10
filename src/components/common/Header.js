@@ -213,7 +213,7 @@ return (
 														<>
 														{(child.title == "Mining Engineering") ? (
 															<div class="list-item">
-																<h4 class="title">Mine Engineering</h4>
+																<h4 class="title"><Link to={"/services/"+child.object_slug}>Mine Engineering</Link></h4>
 																<ul>
 																	<li><a href="#">Short Term Planing </a></li>
 																	<li><a href="#">Medium and Long Trem Planning</a></li>
@@ -224,7 +224,7 @@ return (
 														) : ("")}
 														{(child.title == "Digital Transformation") ? (
 														<div className="list-item">
-															<h4 className="title">Digital Transformation</h4>
+															<h4 className="title"><Link to={"/services/"+child.object_slug}>Digital Transformation</Link></h4>
 															<ul>
 																<li><a href="#">Mine Planning</a></li>
 																<li><a href="#">Asset Management</a></li>
@@ -239,7 +239,7 @@ return (
 														) : ("")}
 														{(child.title == "Geology and Resources") ? (
 														<div class="list-item">
-															<h4 class="title">Geology And Resources</h4>
+															<h4 class="title"><Link to={"/services/"+child.object_slug}>Geology And Resources</Link></h4>
 															<ul>
 																<li><a href="#">Mineral Resource Estimation</a></li>
 																<li><a href="#">Data Management (Mining and Exploration)</a></li>
