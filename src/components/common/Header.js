@@ -277,7 +277,7 @@ return (
 															<li><Link to={"/services/"+child.object_slug}  className="dropdown-item" role="button">{child.title}</Link></li>
 														) : (
 																
-																<li cls={child.url.toLowerCase()} ><Link  to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au", '')}  className="dropdown-item" role="button">{child.title}</Link></li>
+																<li cls={child.url.toLowerCase()} ><Link  to={"/"+child.url.toLowerCase().replace("https://admin.qlresources.com.au/", '')}  className="dropdown-item" role="button">{child.title}</Link></li>
 														)}
 														</>
 														)
