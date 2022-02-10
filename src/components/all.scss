@@ -1,3 +1,9 @@
+ul.menu-section>li .menu-subs.menu-column-4>.list-item .title {
+    margin-bottom: 0;
+}
+ul.menu-section>li .menu-subs.menu-column-4>.list-item ul li {
+    padding-left: 15px !important;
+}
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
