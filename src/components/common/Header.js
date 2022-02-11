@@ -215,8 +215,8 @@ return (
 															<div class="list-item">
 																<h4 class="title"><Link to={"/services/"+child.object_slug}>Mine Engineering</Link></h4>
 																<ul>
-																	<li><a href="#">Short Term Planing </a></li>
-																	<li><a href="#">Medium and Long Trem Planning</a></li>
+																	<li><a href="#">Short Term Planning </a></li>
+																	<li><a href="#">Medium and Long Term Planning</a></li>
 																	<li><a href="#">Product List</a></li>
 																	<li><a href="#">Management Plans</a></li>
 																</ul>
@@ -243,7 +243,7 @@ return (
 															<ul>
 																<li><a href="#">Mineral Resource Estimation</a></li>
 																<li><a href="#">Data Management (Mining and Exploration)</a></li>
-																<li><a href="#">Mineral Statistical Analusis</a></li>
+																<li><a href="#">Mineral Statistical Analysis</a></li>
 																<li><a href="#">Pit Structural Mapping</a></li>
 																<li><a href="#">Geological Risk assessment</a></li>
 																<li><a href="#">Resource Recovery</a></li>
