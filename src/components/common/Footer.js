@@ -94,7 +94,7 @@ class Footer extends Component {
                         
                           <ListGroup as="ul" horizontal className="social-icons align-items-center">
                             <ListGroup.Item as="li" className="font-16 font-regular">
-                            <Link className="nav-link p-0" target="_blank" to="http://linkedin.com/company/qlresources">
+                            <Link className="nav-link p-0" target="_blank" to="https://www.linkedin.com/company/qlspace">
                                 <FaLinkedinIn/>
                             </Link>
                             </ListGroup.Item>
