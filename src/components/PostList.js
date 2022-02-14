@@ -24,7 +24,7 @@ export default class IndexPage extends React.Component {
                     {post.author.name}
                   </Link>
                 </small></p>
-							<div className=" font-16 font-regular card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.substring(0, 500)+"...."}} />
+							<div className=" font-16 font-regular card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.substring(0, 500)}} />
 		  
 		  
 								<Link className="nav-link p-0 font-18 font-regular" to={post.slug} >Keep Reading → </Link>
