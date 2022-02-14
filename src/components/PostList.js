@@ -56,6 +56,12 @@ export const pageQuery = graphql`
         wordpress_48
       }
     }
+	acf {
+          
+          featured_image {
+            source_url
+          }
+        }  
     date(formatString: "MMMM DD, YYYY")
     slug
   }
