@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import Pagination from '../components/Pagination'
+import Footer from '../components/common/Footer'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -12,8 +13,16 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <section className="banner-section">
+			<div className="container">
+				<div className="text-white text-center">
+					<h2 className="font-40 font-uppercase font-bold mb-0">Blogs</h2>
+				</div>
+			</div>
+		</section>
         <PostList posts={posts} title="Latest posts" />
         <Pagination pageContext={pageContext} pathPrefix="/" />
+		<Footer/>
       </Layout>
     )
   }
