@@ -12,6 +12,7 @@ export const BlogPostTemplate = ({
   title,
   date,
   author,
+	image,
 }) => {
   return (
 	<>
