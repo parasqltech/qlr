@@ -15,7 +15,7 @@ export default class IndexPage extends React.Component {
 		  
 			<div className="md-mb-4 h-100 col-xl-4 col-lg-4 col-md-6 col-sm-12">
 				<div className="p-0 border-0 card">
-					<img className="card-img-top" src="https://admin.qlresources.com.au/wp-content/uploads/2020/11/Home-Mining-1.jpg"/>
+					<img className="card-img-top" src={post.acf.featured_image.source_url}/>
 					<div className="pl-0 pr-0 pb-0 h-100 card-body">
 						<div className="font-22 font-bold card-title h5">{post.title}</div>
 							<p><small>
