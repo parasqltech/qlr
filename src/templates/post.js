@@ -24,6 +24,14 @@ export const BlogPostTemplate = ({
 			</Container>
 		</section>
 	</div>
+	<section>
+	 	<Container>
+	 	<Row>
+		    <Col xs lg="6"><img className="card-img-top" src={image}/></Col>
+		   
+		  </Row>
+	  	</Container>
+	 </section>
 	<section className="project-section-2 service-main-section-2">
 		<Container>
 			<div dangerouslySetInnerHTML={{ __html: content }} className="" />
@@ -53,6 +61,7 @@ const BlogPost = ({ data }) => {
         title={post.title}
         date={post.date}
         author={post.author}
+	image={post.acf.featured_image.source_url}
       />
     </Layout>
   )
@@ -85,6 +94,12 @@ export const pageQuery = graphql`
         name
         slug
       }
+	    acf {
+          
+          featured_image {
+            source_url
+          }
+        }  
       tags {
         name
         slug
