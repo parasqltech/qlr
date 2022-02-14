@@ -30,7 +30,7 @@ export const BlogPostTemplate = ({
 		</Container>
 	</section>       
     
-    </Footer>
+    <Footer/>
     </Layout>
   )
 }
