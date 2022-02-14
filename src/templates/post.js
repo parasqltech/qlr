@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { Container,Image,Row,Col } from 'react-bootstrap';
 import Layout from '../components/Layout'
-
+import Footer from '../components/common/Footer'
 export const BlogPostTemplate = ({
   content,
   categories,
@@ -13,7 +14,22 @@ export const BlogPostTemplate = ({
   author,
 }) => {
   return (
-    <section className="section">
+	<Layout>
+	<div className="main-padding-header">
+		<section className="banner-section">
+			<Container>
+				<div className="text-white text-center">
+					<h2 className="font-40 font-uppercase font-bold mb-0">{title}</h2>
+				</div>
+			</Container>
+		</section>
+	</div>
+	<section className="project-section-2 service-main-section-2">
+		<Container>
+			<div dangerouslySetInnerHTML={{ __html: content }} className="" />
+		</Container>
+	</section>       
+    <section className="section d-none">
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -57,6 +73,8 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
+    </Footer>
+    </Layout>
   )
 }
 
