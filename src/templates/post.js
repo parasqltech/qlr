@@ -14,7 +14,7 @@ export const BlogPostTemplate = ({
   author,
 }) => {
   return (
-	<Layout>
+	<>
 	<div className="main-padding-header">
 		<section className="banner-section">
 			<Container>
@@ -31,7 +31,7 @@ export const BlogPostTemplate = ({
 	</section>       
     
     <Footer/>
-    </Layout>
+    </>
   )
 }
 
