@@ -1,13 +1,4 @@
-@media screen and (max-width: 992px){
-.header-item-center {
-    flex: 0 0 50px;
-    -ms-flex: 0 0 50px;
-    order: 3;
-    justify-content: unset;
-    
-}
 
-}
 body{
     overflow-x: hidden;
 }
@@ -3599,4 +3590,16 @@ header .navbar-nav .nav-link.is-active,
 header .navbar-nav .nav-link[aria-current="page"]
 {
   color: #23A5DD !important;
+}
+
+@media screen and (max-width: 992px){
+.header-item-center {
+    flex: 0 0 50px !important;
+    -ms-flex: 0 0 50px;
+    -ms-flex-order: 3;
+    order: 3 !important;
+    -ms-flex-pack: unset;
+    justify-content: unset !important;
+}
+
 }
