@@ -15,7 +15,7 @@ componentDidMount() {
  	var hash = window.location.hash.substring(1);
 	var elmnt = document.getElementById(hash);
   
-  		elmnt.scrollTop = 100;
+  		elmnt.scrollTop = 200;
   }
 }
 
