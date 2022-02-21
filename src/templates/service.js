@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Layout from '../components/Layout'
 import { Container,Image,Row,Col } from 'react-bootstrap';
 import Footer from '../components/common/Footer'
+import $ from "jquery"
 
 class Services extends Component {
 
@@ -13,9 +14,7 @@ super(props);
 componentDidMount() {
    if(window.location.hash) {
  	var hash = window.location.hash.substring(1);
-	var elmnt = document.getElementById(hash);
-  
-  		elmnt.scrollTop = 200;
+	$('html,body').unbind().animate({scrollTop: $(hash).offset().top-50},'slow');
   }
 }
 
