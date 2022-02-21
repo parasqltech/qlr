@@ -7,7 +7,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-      allWordpressWpCpt166 (sort: {fields: database_id, order: DESC}){
+      allWordpressWpCpt166 (sort: {fields: wordpress_id, order: DESC}){
         edges {
           node {
             acf {
