@@ -19,10 +19,14 @@ componentDidMount() {
 const breakdownButton = document.querySelectorAll('.element');
 breakdownButton.forEach(function(btn) {
   btn.addEventListener('click', function(e) {
-    	e.preventDefault();
+    	
  	var url = e.target.getAttribute('href'),hash = url.split('#')[1];
-	  window.location.hash = '#'+hash;
-	$('html,body').animate({scrollTop: $("#"+hash).offset().top-100},'slow');
+	  if($("#"+hash).length > 0){
+		  e.preventDefault();
+	   	window.location.hash = '#'+hash;
+		$('html,body').animate({scrollTop: $("#"+hash).offset().top-100},'slow');
+	  }
+	 
   });
 });	
 	
