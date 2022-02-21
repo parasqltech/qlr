@@ -215,10 +215,10 @@ return (
 															<div class="list-item">
 																<h4 class="title"><Link to={"/services/"+child.object_slug}>Mine Engineering</Link></h4>
 																<ul>
-																	<li><a href="#">Short Term Planning </a></li>
-																	<li><a href="#">Medium and Long Term Planning</a></li>
-																	<li><a href="#">Product List</a></li>
-																	<li><a href="#">Management Plans</a></li>
+																	<li><Link to={"/services/"+child.object_slug+"#"} >Short Term Planning</Link></li>
+																	<li><Link to={"/services/"+child.object_slug+"#"} >Medium and Long-Term Planning</Link></li>
+																	<li><Link to={"/services/"+child.object_slug+"#"} >Management Plans</Link></li>
+																	
 																</ul>
 															</div>
 														) : ("")}
@@ -226,12 +226,9 @@ return (
 														<div className="list-item">
 															<h4 className="title"><Link to={"/services/"+child.object_slug}>Digital Transformation</Link></h4>
 															<ul>
-																<li><a href="#">Mine Planning</a></li>
-																<li><a href="#">Asset Management</a></li>
-																<li><a href="#">Mine Monitoring & Dispatch</a></li>
-																<li><a href="#">SCADA Systems Data</a></li>
-																<li><a href="#">GIS: Data Visualisation </a></li>
-																<li><a href="#">Paperless Inspections </a></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Collaborating Mine Planning, Asset Management, Mine Monitoring and Dispatch, SCADA Systems Data</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >GIS: Data Visualisation</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Paperless Inspections</Link></li>
 															</ul>
 															
 														
@@ -241,14 +238,15 @@ return (
 														<div class="list-item">
 															<h4 class="title"><Link to={"/services/"+child.object_slug}>Geology And Resources</Link></h4>
 															<ul>
-																<li><a href="#">Mineral Resource Estimation</a></li>
-																<li><a href="#">Data Management (Mining and Exploration)</a></li>
-																<li><a href="#">Mineral Statistical Analysis</a></li>
-																<li><a href="#">Pit Structural Mapping</a></li>
-																<li><a href="#">Geological Risk assessment</a></li>
-																<li><a href="#">Resource Recovery</a></li>
-																<li><a href="#">JORC Code Compliance Reporting</a></li>
-
+																<li><Link to={"/services/"+child.object_slug+"#"} >Mineral Exploration</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Data Management (Exploration & Mining)</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Mineral Statistical Analysis</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Block Modelling & Estimation</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Pit Structural Mapping</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Geological Risk Assessment</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >JORC Code Compliance Reporting</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#"} >Resource Recovery</Link></li>
+																
 															</ul>
 															
 														</div>
