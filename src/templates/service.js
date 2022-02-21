@@ -22,7 +22,7 @@ breakdownButton.forEach(function(btn) {
     console.log("here");
  	var hash = window.location.hash.substring(1);
 	  console.log(hash);
-	$('html,body').unbind().animate({scrollTop: $("#"+hash).offset().top-200},'slow');
+	$('html,body').unbind().animate({scrollTop: $("#"+hash).offset().top-100},'slow');
   });
 });	
 	
