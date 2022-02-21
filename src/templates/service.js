@@ -14,7 +14,7 @@ super(props);
 componentDidMount() {
    if(window.location.hash) {
  	var hash = window.location.hash.substring(1);
-	$('html,body').unbind().animate({scrollTop: $(hash).offset().top-50},'slow');
+	$('html,body').unbind().animate({scrollTop: $("#"+hash).offset().top-50},'slow');
   }
 }
 
