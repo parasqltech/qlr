@@ -11,15 +11,15 @@ constructor(props) {
 super(props);
 }
 componentDidMount() {
-   if(window.location.hash) {
- 	var hash = window.location.hash.substring(1);
-	   console.log(hash);
-  }
+   
   }
 
 render() {
 const page = this.props.data.allWordpressWpCpt680;
-
+if(window.location.hash) {
+ 	var hash = window.location.hash.substring(1);
+	   console.log(hash);
+  }
 
 console.log(page);
 return (
