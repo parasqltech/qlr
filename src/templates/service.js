@@ -18,6 +18,8 @@ render() {
 const page = this.props.data.allWordpressWpCpt680;
 if(window.location.hash) {
  	var hash = window.location.hash.substring(1);
+	window.location('#'+hash);
+	window.scrollBy(0,-50);
 	   console.log(hash);
   }
 
