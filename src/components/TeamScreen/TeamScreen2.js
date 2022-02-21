@@ -52,7 +52,7 @@ export default () => (
                                     </Link>
                                 </ListGroup.Item>
                                 <ListGroup.Item as="li" className="">
-                                    <Link className="nav-link font-22" to="/about#footer">
+                                    <Link className="nav-link font-22" to={"mailto:"+prop.node.acf.link2}>
                                         <FaEnvelope/>
                                     </Link>
                                 </ListGroup.Item>
