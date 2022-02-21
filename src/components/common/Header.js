@@ -215,9 +215,9 @@ return (
 															<div class="list-item">
 																<h4 class="title"><Link to={"/services/"+child.object_slug}>Mine Engineering</Link></h4>
 																<ul>
-																	<li><Link to={"/services/"+child.object_slug+"#"} >Short Term Planning</Link></li>
-																	<li><Link to={"/services/"+child.object_slug+"#"} >Medium and Long-Term Planning</Link></li>
-																	<li><Link to={"/services/"+child.object_slug+"#"} >Management Plans</Link></li>
+																	<li><Link to={"/services/"+child.object_slug+"#stp"} >Short Term Planning</Link></li>
+																	<li><Link to={"/services/"+child.object_slug+"#mlp"} >Medium and Long-Term Planning</Link></li>
+																	<li><Link to={"/services/"+child.object_slug+"#mp"} >Management Plans</Link></li>
 																	
 																</ul>
 															</div>
@@ -226,9 +226,9 @@ return (
 														<div className="list-item">
 															<h4 className="title"><Link to={"/services/"+child.object_slug}>Digital Transformation</Link></h4>
 															<ul>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Collaborating Mine Planning, Asset Management, Mine Monitoring and Dispatch, SCADA Systems Data</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >GIS: Data Visualisation</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Paperless Inspections</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#col"} >Collaborating Mine Planning, Asset Management, Mine Monitoring and Dispatch, SCADA Systems Data</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#gis"} >GIS: Data Visualisation</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#pap"} >Paperless Inspections</Link></li>
 															</ul>
 															
 														
@@ -238,14 +238,14 @@ return (
 														<div class="list-item">
 															<h4 class="title"><Link to={"/services/"+child.object_slug}>Geology And Resources</Link></h4>
 															<ul>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Mineral Exploration</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Data Management (Exploration & Mining)</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Mineral Statistical Analysis</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Block Modelling & Estimation</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Pit Structural Mapping</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Geological Risk Assessment</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >JORC Code Compliance Reporting</Link></li>
-																<li><Link to={"/services/"+child.object_slug+"#"} >Resource Recovery</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#me"} >Mineral Exploration</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#dm"} >Data Management (Exploration & Mining)</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#msa"} >Mineral Statistical Analysis</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#bm"} >Block Modelling & Estimation</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#psm"} >Pit Structural Mapping</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#gra"} >Geological Risk Assessment</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#jorc"} >JORC Code Compliance Reporting</Link></li>
+																<li><Link to={"/services/"+child.object_slug+"#rr"} >Resource Recovery</Link></li>
 																
 															</ul>
 															
