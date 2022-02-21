@@ -18,10 +18,9 @@ componentDidMount() {
   }
 const breakdownButton = document.querySelectorAll('.element');
 breakdownButton.forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    console.log("here");
- 	var hash = window.location.hash.substring(1);
-	  console.log(hash);
+  btn.addEventListener('click', function(e) {
+    	e.preventDefault();
+ 	var url = e.target.getAttribute('href'),hash = url.split('#')[1];
 	$('html,body').animate({scrollTop: $("#"+hash).offset().top-100},'slow');
   });
 });	
