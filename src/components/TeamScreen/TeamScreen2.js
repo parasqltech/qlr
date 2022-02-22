@@ -11,7 +11,7 @@ export default () => (
         edges {
           node {
             acf {
-               
+              image
               title1
               title2
               title3
@@ -30,6 +30,7 @@ export default () => (
         data.allWordpressWpCpt166.edges &&
         data.allWordpressWpCpt166.edges.map(
         prop => {
+	     console.log(prop);
           return (
             
              <Col xl={4} lg={4} md={6} sm={12} className="mb-4">
