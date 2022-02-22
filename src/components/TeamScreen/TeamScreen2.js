@@ -11,7 +11,9 @@ export default () => (
         edges {
           node {
             acf {
-              image 
+              image {
+	      source_url
+	      }
               title1
               title2
               title3
@@ -36,7 +38,7 @@ export default () => (
                 <div className="team-block">
                     <div className="inner-box">
                         <div className="image">
-                              <Image src={prop.node.acf.image} className="" fluid/>
+                              <Image src={prop.node.acf.image.source_url} className="" fluid/>
                             
                             <div className="texts">
                                 <p className="font-regular text-white ">{prop.node.acf.title1}</p>
