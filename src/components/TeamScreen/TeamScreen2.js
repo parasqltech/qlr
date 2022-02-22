@@ -11,9 +11,7 @@ export default () => (
         edges {
           node {
             acf {
-              image{
-	      	source_url
-	      }
+              
               title1
               title2
               title3
