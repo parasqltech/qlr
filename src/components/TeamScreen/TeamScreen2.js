@@ -40,7 +40,7 @@ export default () => (
                 <div className="team-block">
                     <div className="inner-box">
                         <div className="image">
-                              
+                              <Image src={prop.node.acf.img.source_url} className="" fluid/>
                             
                             <div className="texts">
                                 <p className="font-regular text-white ">{prop.node.acf.title1}</p>
