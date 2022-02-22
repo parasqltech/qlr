@@ -19,6 +19,7 @@ export default () => (
               title3
               link1
               link2
+	      img
             }
           }
         }
