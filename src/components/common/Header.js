@@ -251,13 +251,16 @@ return (
 															
 														</div>
 														) : ("")}
+														{(child.title == "Mining Equipment Supply") ? (
+														<div class="list-item">
+															<h4 class="title"><Link to={"/services/"+child.object_slug}>Mining Equipment Supply</Link></h4>
+														</div>
+														) : ("")}
 														</>
 														
 														
 													)})}
-												<div className="list-item">
-													<img src={Mining} />
-												</div>
+												
 												</div>
 												
 												</>
