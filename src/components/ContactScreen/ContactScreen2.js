@@ -113,7 +113,7 @@ export default () => (
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagelocation.source_url}/>
                                   <Media.Body>
-                                      <p className="font-18 font-semibold color-666 mb-0">{prop.node.acf.address}</p>
+                                      <p className="font-18 font-semibold color-666 mb-0">301/A, Wallstreet Annexe, Near Gujarat College, Kavi Nanalal Marg, Ellisbridge, Ahmedabad, Gujarat 380006</p>
                                   </Media.Body>
                               </Media>
                             </a>
@@ -123,7 +123,8 @@ export default () => (
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imageEmail.source_url}/>
                                   <Media.Body id="contactnewnew3">
-                                      <p className="font-18 font-semibold color-666 mb-0">{prop.node.acf.email}</p>
+                                      <p className="font-18 font-semibold color-666 mb-0">+91 79 4006 1419
+</p>
                                   </Media.Body>
                               </Media>
                             </a>
