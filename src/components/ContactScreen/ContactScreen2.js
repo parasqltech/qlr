@@ -123,7 +123,7 @@ export default () => (
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imageEmail.source_url}/>
                                   <Media.Body id="contactnewnew3">
-                                      <p className="font-18 font-semibold color-666 mb-0">+91 79 4006 1419
+                                      <p className="font-18 font-semibold color-666 mb-0">{prop.node.acf.email}
 </p>
                                   </Media.Body>
                               </Media>
@@ -134,7 +134,7 @@ export default () => (
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagemobile.source_url}/>
                                   <Media.Body>
-                                      <a href={prop.node.acf.link3} className="font-18 font-semibold color-666 mb-0 d-block">{prop.node.acf.mobile}</a>
+                                      <a href={prop.node.acf.link3} className="font-18 font-semibold color-666 mb-0 d-block">+91 79 4006 1419</a>
                                   </Media.Body>
                               </Media>
                             </div>
