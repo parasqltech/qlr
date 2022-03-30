@@ -58,17 +58,7 @@ class Footer extends Component {
                           <Link to="/contact#contactnewnew3" className="font-bold font-18 color-303030">Contact Us</Link>
                         </div>
                         <ListGroup as="ul">
-                            <ListGroup.Item as="li" className="font-16 font-regular">
-                              <div className="d-flex">    
-                                  <div className="footer-arrow-image last mr-2">
-                                     <Image src={footermap} className="img-fluid "/>
-                                  </div>    
-                                  <div className="footer-arrow-data last">
-                                    {/* <Link to="" className="nav-link p-0"> 45 St Georges Terrace,Ground Floor, Perth, 6000</Link> */}
-                                    <FooterAddress/>
-                                  </div>
-                              </div>
-                            </ListGroup.Item>
+                            
                             <ListGroup.Item as="li" className="font-16 font-regular">
                               <div className="d-flex">    
                                   <div className="footer-arrow-image last mr-2">
