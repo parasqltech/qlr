@@ -1,3 +1,82 @@
+h3.font-25.font-regular.text-center.mb-30 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+@media (min-width: 1024px) and (max-width: 1199px){
+section.contact-section-2 .container .mb-3.md-mb-0.align-items-center.row .col:first-child .md-mb-4.col-xl-12.col-lg-12.col-md-12:first-child .align-items-center.d-flex.media {
+    min-height: 107px !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1023px){
+ section.contact-section-2 .container .mb-3.md-mb-0.align-items-center.row .col:first-child .md-mb-4.col-xl-12.col-lg-12.col-md-12:first-child .align-items-center.d-flex.media {
+    min-height: 110px !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .font-25 {
+    font-size: 16px !important;
+    line-height: 19px !important;
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+}  
+section.contact-section-2 .container .mb-3.md-mb-0.align-items-center.row .col:first-child .md-mb-4.col-xl-12.col-lg-12.col-md-12:first-child .align-items-center.d-flex.media {
+    min-height: 145px !important;
+}
+}
+
+@media (min-width: 577px) and (max-width: 767px){
+    section.contact-section-2 .row .col {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    flex: unset !important;
+}
+   .font-18 {
+    font-size: 14px!important;
+    line-height: 20px!important;
+}
+.font-25 {
+    font-size: 16px!important;
+    line-height: 19px!important;
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+}
+section.contact-section-2 .row .col .align-items-center.d-flex.media img.mr-3.img-fluid {
+    margin-right: 7px !important;
+}
+section.contact-section-2 .row .col .align-items-center.d-flex.media {
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
+}
+
+
+@media (max-width: 576px){
+    section.contact-section-2 .row .col {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    flex: unset !important;
+}
+   .font-18 {
+    font-size: 14px!important;
+    line-height: 20px!important;
+}
+.font-25 {
+    font-size: 16px!important;
+    line-height: 19px!important;
+    margin-bottom: 10px !important;
+    font-weight: 600 !important;
+}
+section.contact-section-2 .row .col .align-items-center.d-flex.media img.mr-3.img-fluid {
+    margin-right: 7px !important;
+}
+section.contact-section-2 .row .col .align-items-center.d-flex.media {
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
+}
 .font-18 {
     font-size: 16px !important;
     line-height: 19px !important;
