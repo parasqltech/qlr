@@ -87,7 +87,7 @@ class Contactsection3 extends Component {
 			};
 			console.log(eventProperties);
 			track('Contact Us Form Filled', eventProperties);  
-         // window.location.href = "https://www.qlresources.com.au/thankyou/";
+
           
           
           
