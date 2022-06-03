@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+
 import { Container,Row,Col,Form,InputGroup,FormControl,Image,Button } from 'react-bootstrap';
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { FaAngleRight } from 'react-icons/fa'
@@ -8,6 +8,11 @@ import formcall from '../../images/form-call.png'
 import formmail from '../../images/form-mail.png'
 import SimpleReactValidator from 'simple-react-validator';
 import ContactScreenTitle3 from '../ContactScreen/ContactScreenTitle3'
+import axios from 'axios';
+import Cookies from 'universal-cookie';
+import { init } from '@amplitude/analytics-browser';
+import { track } from '@amplitude/analytics-browser';
+import { Identify, identify } from '@amplitude/analytics-browser';
 
 class Contactsection3 extends Component {
     constructor(props) {
@@ -71,6 +76,20 @@ class Contactsection3 extends Component {
             2000
         );
         this.setState({IsSubmit: true});
+          init("98d739df3e97915d4ef13950a4e14c76");
+        const eventProperties = {
+			  firstName: this.state.fname,
+			lastName: this.state.lname,
+				email: this.state.email,
+				mobileNumber: this.state.mobile,
+				message: this.state.message,
+
+			};
+			console.log(eventProperties);
+			track('Contact Us Form Filled', eventProperties);  
+          window.location.href = "https://www.qlresources.com.au/thankyou/";
+          
+          
           
         // window.location = '/thankyou';
         //post code
