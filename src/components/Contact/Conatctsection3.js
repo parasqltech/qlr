@@ -189,7 +189,7 @@ class Contactsection3 extends Component {
                                 </Form.Group>
                             </Col>
                             <Col xl={12} lg={12} md={12} className="justify-content-center d-flex">
-                                <Button variant="" type="submit" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
+                                <Button variant="" type="button" onClick={this.submitForm} className="blue font-semibold d-flex alignn-items-center">
                                     Send <FaAngleRight className="ml-1"/>
                                 </Button>
                             </Col>
