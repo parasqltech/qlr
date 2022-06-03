@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "author": "GatsbyCentral.com",
   "dependencies": {
-    "axios": "^0.21.0",
+    "universal-cookie": "^4.0.4",
+    "@amplitude/analytics-browser": "^0.4.1",
+    "axios": "^0.21.1",
+    "gatsby-plugin-amplitude-analytics": "^3.2.0",
     "bootstrap": "^4.5.2",
     "bulma": "^0.7.5",
     "gatsby": "^2.24.50",
