@@ -10,6 +10,9 @@ import HeaderSocialPhone from '../Menu/HeaderSocialPhone'
 import HeaderSocialPhoneIcon from '../Menu/HeaderSocialPhoneIcon'
 import HeaderSocialenvelope from '../Menu/HeaderSocialenvelope'
 import HeaderSocialenvelopeIcon from '../Menu/HeaderSocialenvelopeIcon'
+import Cookies from 'universal-cookie';
+import { init } from '@amplitude/analytics-browser';
+import { track } from '@amplitude/analytics-browser';
 
 class Header extends Component {
   
@@ -18,9 +21,18 @@ class Header extends Component {
 		this.toggleMenu = this.toggleMenu.bind(this);
 		this.showSubMenu = this.showSubMenu.bind(this);
 		this.hideSubMenu = this.hideSubMenu.bind(this);
+		this.createUUID = this.createUUID.bind(this);	
 	}
 	
-	
+	createUUID(){
+    		var dt = new Date().getTime();
+    		var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        		var r = (dt + Math.random()*16)%16 | 0;
+        		dt = Math.floor(dt/16);
+        		return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    		});
+    		return uuid;
+	}
 	
 	toggleMenu(){
 		
@@ -51,6 +63,25 @@ class Header extends Component {
     	};
 
     componentDidMount() {
+	const cookies = new Cookies();
+	var aid =  cookies.get('aid');
+	if(aid == undefined){
+		 var code = this.createUUID();
+		cookies.set("aid",code,{ domain: '.qlresources.com.au' , path: '/' });
+	}	
+	var url_action = window.location.href;
+	init("98d739df3e97915d4ef13950a4e14c76");
+	console.log(document.title)
+	const anid = cookies.get('aid');
+	const eventProperties = {
+	  pageUrl: url_action,
+	anonymoudId: anid,
+		pageName:document.title
+
+	};
+	console.log(eventProperties);
+	track('Page Viewed', eventProperties);    
+	    
 	const menu = document.querySelector('.menu');
 	const menuSection = menu.querySelector('.menu-section');
 	const menuArrow = menu.querySelector('.menu-mobile-arrow');
