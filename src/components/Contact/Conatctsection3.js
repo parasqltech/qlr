@@ -35,7 +35,7 @@ class Contactsection3 extends Component {
       this.email = this.email.bind(this);
       this.mobile = this.mobile.bind(this);
       this.lname = this.lname.bind(this);
-      this.fname = this.fname.bind(this);
+      this.setfname = this.setfname.bind(this);
       this.message = this.message.bind(this);
     }
     
@@ -55,7 +55,7 @@ class Contactsection3 extends Component {
             lname: e.target.value
         });
     }
-    fname(e) {
+    setfname(e) {
         this.setState({
             fname: e.target.value
         });
@@ -130,7 +130,7 @@ class Contactsection3 extends Component {
                             <Col xl={6} lg={6} md={12}>
                                 <Form.Group controlId="">
                                     <InputGroup className="mb-0">
-                                        <input type="text" autocomplete="off" value={this.state.fname} onChange={this.fname} Name='firstName' className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
+                                        <input type="text" autocomplete="off" value={this.state.fname} onChange={this.setfname} Name='firstName' className="form-control main font-18 font-regular color-666" placeholder="First Name" /> 
                                         <InputGroup.Append>
                                         <InputGroup.Text id=""><Image src={formname} fluid/></InputGroup.Text>
                                         </InputGroup.Append>
