@@ -91,7 +91,7 @@ class Contactsection3 extends Component {
           
           
           
-        // window.location = '/thankyou';
+         window.location = '/thankyou';
         //post code
         // axios.post('https://script.google.com/macros/s/AKfycbwvxi4nTkKYAlVfy0kYfqiWRxbw7pI9OCOD_otxZBVjPwTvTtb_fF0O9g/exec', {
         //     fname: 'Fred',
