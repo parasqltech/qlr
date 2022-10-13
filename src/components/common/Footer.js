@@ -103,7 +103,7 @@ class Footer extends Component {
                 <Container>
                   <Row className="align-items-center justify-content-between">
                     <Col xl={6} lg={6} md={6} className="text-left">
-                      <p className="font-16 font-regular text-white mb-0">© 2020 <Link to="/" className="text-white">QLResources</Link> All rights reserved.</p>
+                      <p className="font-16 font-regular text-white mb-0">© 2022 <Link to="/" className="text-white">QLResources</Link> All rights reserved.</p>
                     </Col>
                     <Col xl={6} lg={6} md={6} className="text-right">
                       <Link to="/privacystaement" className="text-white font-16 font-regular">Privacy Statement</Link>
