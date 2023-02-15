@@ -20,9 +20,7 @@ export default class IndexPage extends React.Component {
 						<div className="font-22 font-bold card-title h5">{post.title}</div>
 							<p><small>
                   {post.date} - posted by{' '}
-                  <Link to={`/author/${post.author.slug}`}>
-                    {post.author.name}
-                  </Link>
+                 
                 </small></p>
 							<div className=" font-16 font-regular card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.substring(0, 500)}} />
 		  
@@ -49,13 +47,7 @@ export const pageQuery = graphql`
     id
     title
     excerpt
-    author {
-      name
-      slug
-      avatar_urls {
-        wordpress_48
-      }
-    }
+   
 	acf {
           
           featured_image {
