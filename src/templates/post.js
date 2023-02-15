@@ -11,7 +11,6 @@ export const BlogPostTemplate = ({
   tags,
   title,
   date,
-  author,
 	image,
 }) => {
   return (
@@ -61,7 +60,6 @@ const BlogPost = ({ data }) => {
         tags={post.tags}
         title={post.title}
         date={post.date}
-        author={post.author}
 	image={post.acf.featured_image.source_url}
       />
     </Layout>
@@ -102,10 +100,6 @@ export const pageQuery = graphql`
           }
         }  
       tags {
-        name
-        slug
-      }
-      author {
         name
         slug
       }
