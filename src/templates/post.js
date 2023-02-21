@@ -95,7 +95,7 @@ export const pageQuery = graphql`
       }
 	    acf {
           
-          featured_image {
+          image {
             source_url
           }
         }  
