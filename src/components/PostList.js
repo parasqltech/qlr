@@ -19,7 +19,7 @@ console.log("here");
 				<div className="p-0 border-0 card">
 					
 					<div className="pl-0 pr-0 pb-0 h-100 card-body">
-						<div className="font-22 font-bold card-title h5">{post.title}</div>
+						<div className="font-22 font-bold card-title h5" dangerouslySetInnerHTML={{ __html: post.title }} />
 							<p><small>
                   {post.date} - posted by{' '}
                  
