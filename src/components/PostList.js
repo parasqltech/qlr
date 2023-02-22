@@ -53,9 +53,7 @@ export const pageQuery = graphql`
    
 	acf {
           url
-          image {
-	  	source_url
-	  }
+          
         }  
     date(formatString: "MMMM DD, YYYY")
     slug
