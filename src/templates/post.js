@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
         tags={post.tags}
         title={post.title}
         date={post.date}
-	image={(post.acf.url != null) ? post.acf.url : ""}
+	image={post.acf.url}
       />
     </Layout>
   )
@@ -95,9 +95,7 @@ export const pageQuery = graphql`
       }
 	    acf {
           url
-          image{
-	  	source_url
-	  }
+          
         }  
       tags {
         name
