@@ -6,7 +6,8 @@ export default class IndexPage extends React.Component {
 	
   render() {
     const { posts, title } = this.props
-console.log(this.props);
+console.log("here");
+    console.log(posts);
     return (
       <section className="section home-section-3">
         <div className="container">
