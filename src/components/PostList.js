@@ -10,7 +10,7 @@ console.log(this.props);
     return (
       <section className="section home-section-3">
         <div className="container">
-         
+         <div className="row">
           {posts.map(({ node: post }) => (
 		  
 		  
@@ -33,6 +33,7 @@ console.log(this.props);
 			</div>
           ))}
         </div>
+</div>
       </section>
     )
   }
