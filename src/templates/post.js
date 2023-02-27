@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
 		<section className="banner-section">
 			<Container>
 				<div className="text-white text-center">
-					<h2 className="font-40 font-uppercase font-bold mb-0">{title}</h2>
+					<h2 className="font-40 font-uppercase font-bold mb-0" dangerouslySetInnerHTML={{ __html: title }} />
 				</div>
 			</Container>
 		</section>
