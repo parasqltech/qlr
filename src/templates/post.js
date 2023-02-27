@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
         tags={post.tags}
         title={post.title}
         date={post.date}
-	image={post.acf.url}
+	image={post.acf.url.sourceUrl}
       />
     </Layout>
   )
