@@ -94,7 +94,9 @@ export const pageQuery = graphql`
         slug
       }
 	    acf {
-          url_path
+          url_path {
+	  	sourceUrl
+	  }
           
         }  
       tags {
