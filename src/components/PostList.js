@@ -52,7 +52,9 @@ export const pageQuery = graphql`
     excerpt
    
 	acf {
-          url_path
+          url_path{
+	  sourceUrl
+	  }
           
         }  
     date(formatString: "MMMM DD, YYYY")
