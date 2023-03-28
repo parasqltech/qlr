@@ -17,7 +17,7 @@ console.log("here");
 		  
 			<div className="md-mb-4 h-100 col-xl-4 col-lg-4 col-md-6 col-sm-12">
 				<div className="p-0 border-0 card">
-					{(post.acf.url_path_new != null) ? (<><img className="card-img-top" src={"https://admin.qlresources.com.au/"+post.acf.url_path_new}/></>) : ("") }
+					{(post.acf != null) ? (<><img className="card-img-top" src={"https://admin.qlresources.com.au/"+post.acf.url_path_new}/></>) : ("") }
 					<div className="pl-0 pr-0 pb-0 h-100 card-body">
 						<div className="font-22 font-bold card-title h5" dangerouslySetInnerHTML={{ __html: post.title }} />
 							<p><small>
