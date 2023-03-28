@@ -27,7 +27,10 @@ export const BlogPostTemplate = ({
 	<section>
 	 	<Container>
 	 	<Row>
-		    <Col xs lg="6"><img className="card-img-top" src={"https://admin.qlresources.com.au/"+image}/></Col>
+	  	<div className="col-lg-8 offset-2 mt-3 mb-3 col">
+			<img className="card-img-top" src={"https://admin.qlresources.com.au/"+image}/>
+		</div>	
+		    
 		   
 		  </Row>
 	  	</Container>
