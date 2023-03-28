@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
         tags={post.tags}
         title={post.title}
         date={post.date}
-	image={post.featured_media.source_url}
+	image={post.acf.url_path_new}
       />
     </Layout>
   )
@@ -93,8 +93,8 @@ export const pageQuery = graphql`
         name
         slug
       }
-	     featured_media {
-            source_url
+	     acf {
+            url_path_new
         }
 	   
       tags {
