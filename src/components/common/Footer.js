@@ -73,6 +73,7 @@ class Footer extends Component {
                               <div className="d-flex">    
                                   <div className="footer-arrow-image last mr-2">
                                      <Image src={footercall} className="img-fluid "/>
+                                         <Image src={footercall} className="img-fluid "/>
                                   </div>    
                                   <div className="footer-arrow-data last">
                                     <FooterMobile/>
