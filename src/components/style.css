@@ -463,3 +463,6 @@ section.paginationss {
 .pagination .navbar.navbar-menu .navbar-item a:hover {
     color: #007bff !important;
 }
+li.font-16.font-regular.callingmsg.list-group-item .footer-arrow-image img.img-fluid:last-child {
+    margin-top: 21px;
+}
