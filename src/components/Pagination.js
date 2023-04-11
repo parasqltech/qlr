@@ -5,6 +5,10 @@ const Pagination = ({ pageContext, pathPrefix }) => {
   const { previousPagePath, nextPagePath } = pageContext
 
   return (
+    <section class="paginationss">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
     <nav className="pagination" role="navigation">
       <div className="navbar navbar-menu">
         {previousPagePath && (
@@ -23,6 +27,10 @@ const Pagination = ({ pageContext, pathPrefix }) => {
         )}
       </div>
     </nav>
+</div>
+</div>
+</div>
+</section>
   )
 }
 
