@@ -69,7 +69,7 @@ class Footer extends Component {
                                   </div>
                               </div>
                             </ListGroup.Item>
-                            <ListGroup.Item as="li" className="font-16 font-regular">
+                            <ListGroup.Item as="li" className="font-16 font-regular callingmsg">
                               <div className="d-flex">    
                                   <div className="footer-arrow-image last mr-2">
                                      <Image src={footercall} className="img-fluid "/>
