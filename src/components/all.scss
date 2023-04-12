@@ -3701,3 +3701,60 @@ header .navbar-nav .nav-link[aria-current="page"]
 }
 
 }
+
+/* 12 april 2023 */
+
+.navbar-item {
+    text-align: center;
+    font-variant: bki;
+}
+
+.pagination .navbar.navbar-menu {
+    display: inline-block !important;
+    background: #23a5dd;
+    color: #fff!important;
+    outline: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border: 2px solid #fff!important;
+    max-width: 150px !important;
+    width: 100% !important;
+    padding: 0;
+}
+
+.pagination {
+    display: block;
+    text-align: center;
+}
+
+.pagination .navbar.navbar-menu .navbar-item {}
+
+.pagination .navbar.navbar-menu .navbar-item a {
+    color: #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+section.paginationss {
+    margin-bottom: 50px;
+}
+
+.pagination .navbar.navbar-menu .navbar-item:hover a {}
+
+.pagination .navbar.navbar-menu:hover {
+    background: #fff;
+    border: 2px solid #23a5dd!important;
+    color: #23a5dd !important;
+}
+
+.navbar.navbar-menu {}
+
+.pagination .navbar.navbar-menu .navbar-item a:hover {
+    color: #007bff !important;
+}
+li.font-16.font-regular.callingmsg.list-group-item .footer-arrow-image img.img-fluid:last-child {
+    margin-top: 21px;
+}
