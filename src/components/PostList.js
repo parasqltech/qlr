@@ -27,7 +27,7 @@ console.log("here");
 							<div className=" font-16 font-regular card-text" dangerouslySetInnerHTML={{ __html: post.excerpt.substring(0, 500)}} />
 		  
 		  
-								<Link className="nav-link p-0 font-18 font-regular" to={"/"+post.slug} >Keep Reading → </Link>
+								<Link className="nav-link p-0 font-18 font-regular" to={"/blog/"+post.slug} >Keep Reading → </Link>
 									
 					</div>
 				</div>
