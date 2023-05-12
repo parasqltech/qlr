@@ -110,7 +110,7 @@ export default () => (
 		</Col>
 		<Col>
 		<Col xl={12} lg={12} md={12} className="md-mb-4">
-                            <a href={prop.node.acf.link1} target="_blank" className="h-100">
+                            <a href="https://goo.gl/maps/4kNRJGU3EtJ1mjpS8" target="_blank" className="h-100">
                               <Media className="align-items-center d-flex">
                                   <img width="30" className="mr-3 img-fluid" src={prop.node.acf.imagelocation.source_url}/>
                                   <Media.Body>
