@@ -466,3 +466,27 @@ section.paginationss {
 li.font-16.font-regular.callingmsg.list-group-item .footer-arrow-image img.img-fluid:last-child {
     margin-top: 21px;
 }
+.pagination .navbar.navbar-menu {
+    max-width: unset !important;
+    width: unset !important;
+    display: flex !important;
+    background: transparent;
+}
+.pagination .navbar.navbar-menu .navbar-item {
+    width: auto;
+    border: solid  2px  #23a5dd;
+    max-width: 120px !important;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination .navbar.navbar-menu .navbar-item a.commonnav {
+    background: #ffff;
+    display: block;
+    color: #23a5dd;
+}
+.pagination .navbar.navbar-menu .navbar-item:hover a.commonnav {
+    background: #23a5dd;
+    display: block;
+    color: #fff !important;
+}
