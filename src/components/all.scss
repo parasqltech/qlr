@@ -3744,11 +3744,11 @@ section.paginationss {
 
 .pagination .navbar.navbar-menu .navbar-item:hover a {}
 
-.pagination .navbar.navbar-menu:hover {
-    background: #fff;
-    border: 2px solid #23a5dd!important;
-    color: #23a5dd !important;
-}
+// .pagination .navbar.navbar-menu:hover {
+//     background: #fff;
+//     border: 2px solid #23a5dd!important;
+//     color: #23a5dd !important;
+// }
 
 .navbar.navbar-menu {}
 
@@ -3767,4 +3767,29 @@ li.font-16.font-regular.callingmsg.list-group-item .footer-arrow-image img.img-f
     transform: unset !important;
     z-index: 1 !important;
 }
+}
+
+.pagination .navbar.navbar-menu {
+    max-width: unset !important;
+    width: unset !important;
+    display: flex !important;
+    background: transparent;
+}
+.pagination .navbar.navbar-menu .navbar-item {
+    width: auto;
+    border: solid  2px  #23a5dd;
+    max-width: 120px !important;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination .navbar.navbar-menu .navbar-item a.commonnav {
+    background: #ffff;
+    display: block;
+    color: #23a5dd;
+}
+.pagination .navbar.navbar-menu .navbar-item:hover a.commonnav {
+    background: #23a5dd;
+    display: block;
+    color: #fff !important;
 }
