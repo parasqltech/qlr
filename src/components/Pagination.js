@@ -19,7 +19,7 @@ const Pagination = ({ pageContext, pathPrefix }) => {
           </div>
         )}
         {nextPagePath && (
-          <div className="navbar-item">
+          <div className="navbar-item xyz">
             <Link to={nextPagePath} rel="next" className="navnext commonnav">
               Next
             </Link>
