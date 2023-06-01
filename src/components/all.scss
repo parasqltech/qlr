@@ -3774,6 +3774,8 @@ li.font-16.font-regular.callingmsg.list-group-item .footer-arrow-image img.img-f
     width: unset !important;
     display: flex !important;
     background: transparent;
+    justify-content: center;
+    column-gap: 10px;
 }
 .pagination .navbar.navbar-menu .navbar-item {
     width: auto;
