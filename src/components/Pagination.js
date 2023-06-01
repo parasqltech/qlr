@@ -13,14 +13,14 @@ const Pagination = ({ pageContext, pathPrefix }) => {
       <div className="navbar navbar-menu">
         {previousPagePath && (
           <div className="navbar-item">
-            <Link to={previousPagePath} rel="prev">
+            <Link to={previousPagePath} rel="prev" className="navprev commonnav">
               Previous
             </Link>
           </div>
         )}
         {nextPagePath && (
           <div className="navbar-item">
-            <Link to={nextPagePath} rel="next">
+            <Link to={nextPagePath} rel="next" className="navnext commonnav">
               Next
             </Link>
           </div>
